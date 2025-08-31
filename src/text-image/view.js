@@ -1,0 +1,2 @@
+console.log( 'Hello World! (from skp-blocks-hero block)' );
+

@@ -1,0 +1,25 @@
+{
+	"name": "hero",
+	"version": "0.1.0",
+	"description": "Example block scaffolded with Create Block tool.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php --blocks-manifest",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"build:scss": "sass assets/scss/style.scss assets/css/style.css --no-source-map",
+		"watch:scss": "sass --watch assets/scss/style.scss:assets/css/style.css --no-source-map",
+		"start": "concurrently \"npm run watch:scss\" \"wp-scripts start --webpack-copy-php --blocks-manifest\""
+	},
+	"devDependencies": {
+		"@wordpress/browserslist-config": "^6.29.0",
+		"@wordpress/scripts": "^30.22.0",
+		"sass": "^1.91.0"
+	},
+	"keywords": []
+}

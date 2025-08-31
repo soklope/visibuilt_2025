@@ -1,0 +1,82 @@
+/* Box sizing and layout */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML defaults */
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Remove default list styles */
+ol, ul {
+  list-style: none;
+}
+
+/* Remove default quotes in blockquotes */
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none;
+}
+
+/* Remove table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove text decoration and inherit color for links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default image border */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form elements reset */
+button, input, select, textarea {
+  font: inherit;
+  margin: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  outline: none;
+  appearance: none;
+}
+
+/* Remove fieldset borders */
+fieldset {
+  border: 0;
+}
+
+/* Remove default horizontal rules */
+hr {
+  border: 0;
+  height: 0;
+  margin: 0;
+}
+
+/* Remove default focus outline for better styling control */
+:focus {
+  outline: none;
+}
+
+/* Optional: smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
