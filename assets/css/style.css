@@ -80,3 +80,26 @@ hr {
 html {
   scroll-behavior: smooth;
 }
+
+.page-container {
+  background-color: red;
+}
+@media (min-width: 768px) {
+  .page-container {
+    background-color: blue;
+  }
+}
+@media (min-width: 1024px) {
+  .page-container {
+    background-color: green;
+  }
+}
+@media (min-width: 1280px) {
+  .page-container {
+    background-color: purple;
+  }
+}
+
+body {
+  background-color: #FEFFF1;
+}

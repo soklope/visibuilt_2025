@@ -4,7 +4,7 @@
 	$image_url = $attributes['imageUrl'] ?? '';
 ?>
 
-<div class="wp-block-skp-blocks-hero " <?php echo get_block_wrapper_attributes(); ?>>
+<div class="wp-block-skp-blocks-hero page-container" <?php echo get_block_wrapper_attributes(); ?>>
     <?php if ( $heading ) : ?>
         <h2><?php echo esc_html( $heading ); ?></h2>
     <?php endif; ?>

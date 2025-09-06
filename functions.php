@@ -6,6 +6,16 @@ function wpSetup() {
 }
 add_action('after_setup_theme', 'wpSetup');
 
+function visibuilt_register_menus() {
+    register_nav_menus(
+        array(
+            'primary_menu' => __( 'Header Menu', 'visibuilt' ),
+            'footer_menu'  => __( 'Footer Menu', 'visibuilt' )
+        )
+    );
+}
+add_action( 'after_setup_theme', 'visibuilt_register_menus' );
+
 function my_admin_styles() {
     wp_enqueue_style('wp-admin');
 }

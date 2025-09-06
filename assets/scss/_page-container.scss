@@ -1,0 +1,17 @@
+@use 'breakpoints' as *;
+
+.page-container {
+    background-color: red;
+
+    @include breakpoint(tablet) {
+        background-color: blue;
+    }
+
+    @include breakpoint(laptop) {
+        background-color: green;
+    }
+
+    @include breakpoint(desktop) {
+        background-color: purple;
+    }
+}
