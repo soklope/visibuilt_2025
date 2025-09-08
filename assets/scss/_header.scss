@@ -5,6 +5,12 @@
     
     a {
         font-weight: 500;
+        transition: .2s;
+
+        &:hover {
+            transition: .2s;
+            color: $yellow;
+        }
     }
 
     &__inner {
@@ -51,7 +57,6 @@
         bottom: 0;
         left: 0;
         height: 100dvh;
-
         opacity: 0;
         visibility: hidden;   
         transition: opacity 0.2s ease, visibility 0.2s ease;
@@ -60,6 +65,11 @@
         &--toggled {
             opacity: 1;
             visibility: visible;
+            z-index: 2;
+
+            @include breakpoint(laptop) {
+                display: none;
+            }   
         }
     }
 

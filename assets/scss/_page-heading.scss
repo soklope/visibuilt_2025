@@ -1,0 +1,16 @@
+@use 'breakpoints' as *;
+@use 'variables' as *;
+
+.page-heading {
+    display: flex;
+    gap: 40px;
+    align-items: end;
+
+    &__title {
+
+        &::after {
+            content: ".";
+            color: $yellow;
+        }
+    }
+}

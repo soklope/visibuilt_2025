@@ -4,8 +4,11 @@
 
 
 .footer {
-
     font-size: $font-size-sm;
+
+    @include breakpoint(laptop) {
+        padding: 160px 0;
+    }
     
     &__inner {
         display: flex;
@@ -15,11 +18,58 @@
     
     &__navigation {
         display: flex;
-        gap: 40px;
+        flex-direction: column;
+        gap: 16px;
+
+        @include breakpoint(laptop) {
+            flex-direction: row;
+            gap: 40px;
+        }
     }
 
     &__child-container {
         display: flex;
         justify-content: space-between;
+    }
+
+
+    &__some {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @include breakpoint(laptop) {
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        &--instagram {
+            display: block;
+            content: "";
+            height: 24px;
+            width: 24px;
+            background-image: url('../logo/instagram.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+
+        &--linkedin {
+            display: block;
+            content: "";
+            height: 24px;
+            width: 24px;
+            background-image: url('../logo/linkedin.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+    }
+
+    .custom-logo {
+        width: 100%;
+        max-height: 28px;
+
+        filter: brightness(0);
     }
 }

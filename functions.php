@@ -109,3 +109,31 @@ function mytheme_setup() {
     ) );
 }
 add_action( 'after_setup_theme', 'mytheme_setup' );
+
+
+
+
+
+function visibuilt_customize_social( $wp_customize ) {
+    $wp_customize->add_section( 'visibuilt_social_links', array(
+        'title'    => __( 'Social Links', 'visibuilt' ),
+        'priority' => 170,
+    ) );
+
+    // LinkedIn
+    $wp_customize->add_setting( 'visibuilt_linkedin_url' );
+    $wp_customize->add_control( 'visibuilt_linkedin_url', array(
+        'label'   => __( 'LinkedIn URL', 'visibuilt' ),
+        'section' => 'visibuilt_social_links',
+        'type'    => 'url',
+    ) );
+
+    // Instagram
+    $wp_customize->add_setting( 'visibuilt_instagram_url' );
+    $wp_customize->add_control( 'visibuilt_instagram_url', array(
+        'label'   => __( 'Instagram URL', 'visibuilt' ),
+        'section' => 'visibuilt_social_links',
+        'type'    => 'url',
+    ) );
+}
+add_action( 'customize_register', 'visibuilt_customize_social' );

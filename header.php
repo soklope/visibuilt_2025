@@ -21,7 +21,7 @@
                     'theme_location' => 'primary_menu',
                     'container'      => 'nav',
                     'container_class'=> 'main-navigation',
-                    'menu_class'     => 'header__navigation',
+                    'menu_class'     => 'header__navigation'
                 ) );
             ?>
 

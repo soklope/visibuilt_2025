@@ -1,8 +1,13 @@
         <footer class="footer">
             <div class="footer__inner page-container">
                 <div class="footer__child-container">
-                    <p>Mailchimp goes here</p>
-                    <p>Mailchimp goes here</p>
+                    <?php 
+                        if ( function_exists( 'the_custom_logo' ) ) {
+                            the_custom_logo();
+                        } else {
+                            echo '<h1>' . get_bloginfo( 'name' ) . '</h1>'; 
+                        }
+                    ?>
                 </div>
 
                 <hr>
@@ -39,7 +44,20 @@
                         <p>Tlf: +45 88 88 88 88</p>
                         <p>CVR: 12345678</p>
                     </div>
-                    <p>SOME here</p>
+
+                    <div class="footer__some">
+                        <?php if ( $linkedin = get_theme_mod( 'visibuilt_linkedin_url' ) ) : ?>
+                            <a href="<?php echo esc_url( $linkedin ); ?>" target="_blank" rel="noopener">
+                                <i class="footer__some--linkedin"></i>
+                            </a>
+                        <?php endif; ?>
+
+                        <?php if ( $instagram = get_theme_mod( 'visibuilt_instagram_url' ) ) : ?>
+                            <a href="<?php echo esc_url( $instagram ); ?>" target="_blank" rel="noopener">
+                                <i class="footer__some--instagram"></i>
+                            </a>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
         </footer>
