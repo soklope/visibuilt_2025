@@ -26,11 +26,13 @@
             ?>
 
             <button class="header__burger">menu</button>
+
             <!-- <button class="header__burger">
                 <span></span>
                 <span></span>
                 <span></span>
             </button> -->
+            
         </div>
 
         <?php

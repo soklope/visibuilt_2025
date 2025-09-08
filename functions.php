@@ -14,7 +14,8 @@ function visibuilt_register_menus() {
     register_nav_menus(
         array(
             'primary_menu' => __( 'Header Menu', 'visibuilt' ),
-            'footer_menu'  => __( 'Footer Menu', 'visibuilt' )
+            'footer_menu'  => __( 'Footer Menu', 'visibuilt' ),
+            'legal_menu'   => __( 'Legal Menu', 'visibuilt' )
         )
     );
 }

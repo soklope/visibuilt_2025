@@ -3,6 +3,10 @@
 
 .header {
     
+    a {
+        font-weight: 500;
+    }
+
     &__inner {
         height: 80px;
         display: flex;

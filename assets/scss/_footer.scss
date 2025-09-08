@@ -1,0 +1,25 @@
+@use 'breakpoints' as *;
+@use 'variables' as *;
+@use 'fonts' as *;
+
+
+.footer {
+
+    font-size: $font-size-sm;
+    
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    &__navigation {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__child-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
