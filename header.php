@@ -25,9 +25,22 @@
                 ) );
             ?>
 
-            <div class="header__burger">
-
-            </div>
+            <button class="header__burger">menu</button>
+            <!-- <button class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button> -->
         </div>
+
+        <?php
+            wp_nav_menu( array(
+                'theme_location' => 'primary_menu',
+                'container'      => 'nav',
+                'container_class'=> 'header__mega-menu-container',
+                'menu_class'     => 'page-container header__mega-menu',
+            ) );
+        ?>
     </header>
+
     

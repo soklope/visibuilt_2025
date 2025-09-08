@@ -1,6 +1,12 @@
 @use 'variables' as *;
+@use 'breakpoints' as *;
 
 body {
     font-family: 'NeueMontreal', sans-serif;
     background-color: $off-white;
+    position: relative;
+
+    @include breakpoint(tablet) {
+        padding: 0 16px;
+    }
 }
