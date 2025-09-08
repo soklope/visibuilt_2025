@@ -1,17 +1,19 @@
 @use 'breakpoints' as *;
 
 .page-container {
-    background-color: red;
-
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 8px;
+    
     @include breakpoint(tablet) {
-        background-color: blue;
+        max-width: 720px;
     }
 
     @include breakpoint(laptop) {
-        background-color: green;
+        max-width: 1140px;
     }
 
     @include breakpoint(desktop) {
-        background-color: purple;
+        max-width: 1440px;
     }
 }

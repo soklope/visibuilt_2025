@@ -8,14 +8,26 @@
     </head>
 <body>
 
-    <header>
-        <?php
-            wp_nav_menu( array(
-                'theme_location' => 'primary_menu',
-                'container'      => 'nav',
-                'container_class'=> 'main-navigation',
-                'menu_class'     => 'menu',
-            ) );
-        ?>
+    <header class="header">
+        <div class="page-container header__inner">
+            <?php
+                if ( function_exists( 'the_custom_logo' ) ) {
+                    the_custom_logo();
+                } else {
+                    echo '<h1>' . get_bloginfo( 'name' ) . '</h1>'; 
+                }
+
+                wp_nav_menu( array(
+                    'theme_location' => 'primary_menu',
+                    'container'      => 'nav',
+                    'container_class'=> 'main-navigation',
+                    'menu_class'     => 'header__navigation',
+                ) );
+            ?>
+
+            <div class="header__burger">
+
+            </div>
+        </div>
     </header>
     

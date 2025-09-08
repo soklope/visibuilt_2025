@@ -82,24 +82,81 @@ html {
 }
 
 .page-container {
-  background-color: red;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 8px;
 }
 @media (min-width: 768px) {
   .page-container {
-    background-color: blue;
+    max-width: 720px;
   }
 }
 @media (min-width: 1024px) {
   .page-container {
-    background-color: green;
+    max-width: 1140px;
   }
 }
 @media (min-width: 1280px) {
   .page-container {
-    background-color: purple;
+    max-width: 1440px;
   }
 }
 
+.header__inner {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) {
+  .header__inner {
+    height: 120px;
+  }
+}
+.header__burger {
+  background-color: aqua;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.header__navigation {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .header__navigation {
+    display: flex;
+    gap: 40px;
+  }
+}
+.header .custom-logo {
+  width: 100%;
+  max-height: 28px;
+  filter: brightness(0);
+}
+
 body {
+  font-family: "NeueMontreal", sans-serif;
   background-color: #FEFFF1;
+}
+
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("../fonts/NeueMontreal/NeueMontreal-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("../fonts/NeueMontreal/NeueMontreal-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("../fonts/NeueMontreal/NeueMontreal-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }

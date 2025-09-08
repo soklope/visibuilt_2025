@@ -1,0 +1,44 @@
+@use 'breakpoints' as *;
+
+.header {
+    
+    &__inner {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include breakpoint(laptop) {
+            height: 120px;
+        }
+    }
+
+    &__burger {
+        background-color: aqua;
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+    }
+
+    &__navigation {
+        display: none;
+        
+        @include breakpoint(tablet) {
+        }
+        
+        @include breakpoint(laptop) {
+            display: flex;
+            gap: 40px;
+        }
+
+        @include breakpoint(desktop) {
+        }
+    }
+
+    .custom-logo {
+        width: 100%;
+        max-height: 28px;
+
+        filter: brightness(0);
+    }
+}

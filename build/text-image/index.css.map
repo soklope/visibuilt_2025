@@ -1,1 +1,0 @@
-{"version":3,"file":"text-image/index.css","mappings":";;;AACA;EACC;AAAD,C","sources":["webpack://hero/./src/text-image/editor.scss"],"sourcesContent":["\n.wp-block-skp-blocks-hero {\n\tborder: 1px dotted #f00;\n}\n"],"names":[],"sourceRoot":""}
