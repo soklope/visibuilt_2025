@@ -4,7 +4,10 @@
 
 
 .footer {
+    margin-top: 600px;
+
     font-size: $font-size-sm;
+    padding: 40px 0;
 
     @include breakpoint(laptop) {
         padding: 160px 0;
@@ -48,7 +51,7 @@
             content: "";
             height: 24px;
             width: 24px;
-            background-image: url('../logo/instagram.svg');
+            background-image: url('../icons/instagram.svg');
             background-position: center;
             background-repeat: no-repeat;
             object-fit: cover;
@@ -59,7 +62,7 @@
             content: "";
             height: 24px;
             width: 24px;
-            background-image: url('../logo/linkedin.svg');
+            background-image: url('../icons/linkedin.svg');
             background-position: center;
             background-repeat: no-repeat;
             object-fit: cover;

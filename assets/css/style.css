@@ -198,7 +198,9 @@ html {
   font-display: swap;
 }
 .footer {
+  margin-top: 600px;
   font-size: 0.875rem;
+  padding: 40px 0;
 }
 @media (min-width: 1024px) {
   .footer {
@@ -241,7 +243,7 @@ html {
   content: "";
   height: 24px;
   width: 24px;
-  background-image: url("../logo/instagram.svg");
+  background-image: url("../icons/instagram.svg");
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -251,7 +253,7 @@ html {
   content: "";
   height: 24px;
   width: 24px;
-  background-image: url("../logo/linkedin.svg");
+  background-image: url("../icons/linkedin.svg");
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -282,10 +284,144 @@ hr {
 
 .page-heading {
   display: flex;
-  gap: 40px;
-  align-items: end;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .page-heading {
+    gap: 40px;
+  }
 }
 .page-heading__title::after {
   content: ".";
   color: #EE9A32;
+}
+.page-heading hr {
+  flex: 1;
+}
+.page-heading__icon {
+  display: block;
+  content: "";
+  height: 24px;
+  width: 24px;
+  background-size: contain;
+  background-image: url("../icons/hex.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+h1,
+.heading-1 {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  h1,
+  .heading-1 {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  h1,
+  .heading-1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  h1,
+  .heading-1 {
+    font-size: 4rem;
+  }
+}
+
+h2,
+.heading-2 {
+  font-size: 1.75rem;
+}
+@media (min-width: 768px) {
+  h2,
+  .heading-2 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  h2,
+  .heading-2 {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 1280px) {
+  h2,
+  .heading-2 {
+    font-size: 2.5rem;
+  }
+}
+
+h3,
+.heading-3 {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  h3,
+  .heading-3 {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  h3,
+  .heading-3 {
+    font-size: 2rem;
+  }
+}
+
+h4,
+.heading-4 {
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  h4,
+  .heading-4 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  h4,
+  .heading-4 {
+    font-size: 1.75rem;
+  }
+}
+
+h5,
+.heading-5 {
+  font-size: 1.125rem;
+}
+@media (min-width: 768px) {
+  h5,
+  .heading-5 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  h5,
+  .heading-5 {
+    font-size: 1.5rem;
+  }
+}
+
+h6,
+.heading-6 {
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  h6,
+  .heading-6 {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1024px) {
+  h6,
+  .heading-6 {
+    font-size: 1.25rem;
+  }
 }
