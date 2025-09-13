@@ -1,0 +1,24 @@
+.some {
+
+    &__instagram {
+        display: block;
+        content: "";
+        height: 24px;
+        width: 24px;
+        background-image: url('../icons/instagram.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+
+    &__linkedin {
+        display: block;
+        content: "";
+        height: 24px;
+        width: 24px;
+        background-image: url('../icons/linkedin.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+}

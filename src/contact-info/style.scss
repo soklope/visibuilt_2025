@@ -5,11 +5,6 @@
 
     &__heading {
         color: $off-white;
-        margin-bottom: 8px;
-
-        @include breakpoint(laptop) {
-            margin-bottom: 16px;
-        }
     }
 
     &__text {

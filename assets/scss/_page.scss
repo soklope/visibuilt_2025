@@ -1,0 +1,20 @@
+@use 'breakpoints' as *;
+
+.page-main {
+
+    &--contact {
+        min-height: calc(100dvh - 104px); // subtracting height of header + its margin bottom
+
+        @include breakpoint(tablet) {
+            min-height: calc(100dvh - 104px);
+        }
+    
+        @include breakpoint(laptop) {
+            min-height: calc(100dvh - 152px);
+        }
+
+        @include breakpoint(desktop) {
+            min-height: calc(100dvh - 200px);
+        }
+    }
+}

@@ -102,8 +102,41 @@ html {
   }
 }
 
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("../fonts/NeueMontreal/NeueMontreal-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("../fonts/NeueMontreal/NeueMontreal-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("../fonts/NeueMontreal/NeueMontreal-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("../fonts/NeueMontreal/NeueMontreal-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 .header {
+  position: sticky;
+  z-index: 2;
   margin-bottom: 24px;
+  background-color: #FEFFF1;
+  top: -80px;
+  transition: 0.3s;
 }
 @media (min-width: 768px) {
   .header {
@@ -112,6 +145,7 @@ html {
 }
 @media (min-width: 1024px) {
   .header {
+    top: -120px;
     margin-bottom: 32px;
   }
 }
@@ -119,6 +153,12 @@ html {
   .header {
     margin-bottom: 80px;
   }
+}
+.header--contact {
+  background-color: #2D342A;
+}
+.header--show {
+  top: 0px;
 }
 .header a {
   font-weight: 500;
@@ -177,16 +217,34 @@ html {
   visibility: hidden;
   transition: opacity 0.2s ease, visibility 0.2s ease;
   align-items: center;
+  padding: 16px 0;
+  text-align: end;
+}
+.header .header__mega-menu-container--contact {
+  background-color: #2D342A;
+}
+.header .header__mega-menu-container--contact a {
+  color: #FEFFF1;
 }
 .header .header__mega-menu-container--toggled {
   opacity: 1;
   visibility: visible;
-  z-index: 2;
 }
 @media (min-width: 1024px) {
   .header .header__mega-menu-container--toggled {
     display: none;
   }
+}
+.header .header__mega-menu-container a {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.header__mega-menu-some-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: end;
+  margin-top: 32px;
 }
 .header .custom-logo {
   width: 100%;
@@ -197,44 +255,20 @@ html {
   filter: unset;
 }
 
-@font-face {
-  font-family: "NeueMontreal";
-  src: url("../fonts/NeueMontreal/NeueMontreal-Light.otf") format("opentype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "NeueMontreal";
-  src: url("../fonts/NeueMontreal/NeueMontreal-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "NeueMontreal";
-  src: url("../fonts/NeueMontreal/NeueMontreal-Medium.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "NeueMontreal";
-  src: url("../fonts/NeueMontreal/NeueMontreal-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 .footer {
-  margin-top: 120px;
+  margin-top: 80px;
   background-color: #FEFFF1;
   font-size: 0.875rem;
-  padding: 40px 0;
+  padding: 80px 0;
 }
 @media (min-width: 1024px) {
   .footer {
     padding: 160px 16px;
+    margin-top: 160px;
   }
+}
+.footer--contact {
+  margin-top: 0;
 }
 .footer__inner {
   display: flex;
@@ -269,26 +303,6 @@ html {
     flex-direction: row;
     gap: 40px;
   }
-}
-.footer__some--instagram {
-  display: block;
-  content: "";
-  height: 24px;
-  width: 24px;
-  background-image: url("../icons/instagram.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: cover;
-}
-.footer__some--linkedin {
-  display: block;
-  content: "";
-  height: 24px;
-  width: 24px;
-  background-image: url("../icons/linkedin.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: cover;
 }
 .footer .custom-logo {
   width: 100%;
@@ -326,7 +340,7 @@ hr {
 }
 @media (min-width: 1024px) {
   .page-heading {
-    margin-bottom: 32px;
+    margin-bottom: 48px;
   }
 }
 @media (min-width: 1537px) {
@@ -371,24 +385,24 @@ hr {
 
 h1,
 .heading-1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 @media (min-width: 768px) {
   h1,
   .heading-1 {
-    font-size: 2.25rem;
+    font-size: 4rem;
   }
 }
 @media (min-width: 1024px) {
   h1,
   .heading-1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 }
 @media (min-width: 1537px) {
   h1,
   .heading-1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 
@@ -574,4 +588,44 @@ a:hover {
   .skp-margin-l {
     margin-bottom: 3.5rem; /* desktop ~56px */
   }
+}
+
+.page-main--contact {
+  min-height: calc(100dvh - 104px);
+}
+@media (min-width: 768px) {
+  .page-main--contact {
+    min-height: calc(100dvh - 104px);
+  }
+}
+@media (min-width: 1024px) {
+  .page-main--contact {
+    min-height: calc(100dvh - 152px);
+  }
+}
+@media (min-width: 1537px) {
+  .page-main--contact {
+    min-height: calc(100dvh - 200px);
+  }
+}
+
+.some__instagram {
+  display: block;
+  content: "";
+  height: 24px;
+  width: 24px;
+  background-image: url("../icons/instagram.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.some__linkedin {
+  display: block;
+  content: "";
+  height: 24px;
+  width: 24px;
+  background-image: url("../icons/linkedin.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
 }

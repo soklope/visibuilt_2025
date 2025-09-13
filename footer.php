@@ -1,4 +1,6 @@
-        <footer class="footer">
+        <?php $is_contact_page = is_page( 'contact' ); ?>
+        
+        <footer class="<?= $is_contact_page ? 'footer footer--contact' : 'footer'?>">
             <div class="footer__inner page-container">
                 <div class="footer__child-container">
                     <?php 
@@ -38,23 +40,22 @@
 
                 <div class="footer__child-container">
                     <div class="footer__legal">
-                        <p>© <?php echo date('Y'); ?> Your Company Name</p>
-                        <p>123 Business Street, 1000 Copenhagen, Denmark</p>
-                        <p>123 Business Street, 1000 Copenhagen, Denmark</p>
-                        <p>Tlf: +45 88 88 88 88</p>
-                        <p>CVR: 12345678</p>
+                        <p>© <?php echo date('Y'); ?> Visibuilt ApS</p>
+                        <p>Alfa Laval Innovation House</p>
+                        <p>Maskinvej 5</p>
+                        <p>CVR: 4354 7658</p>
                     </div>
 
                     <div class="footer__some">
                         <?php if ( $linkedin = get_theme_mod( 'visibuilt_linkedin_url' ) ) : ?>
                             <a href="<?php echo esc_url( $linkedin ); ?>" target="_blank" rel="noopener">
-                                <i class="footer__some--linkedin"></i>
+                                <i class="some__linkedin"></i>
                             </a>
                         <?php endif; ?>
 
                         <?php if ( $instagram = get_theme_mod( 'visibuilt_instagram_url' ) ) : ?>
                             <a href="<?php echo esc_url( $instagram ); ?>" target="_blank" rel="noopener">
-                                <i class="footer__some--instagram"></i>
+                                <i class="some__instagram"></i>
                             </a>
                         <?php endif; ?>
                     </div>

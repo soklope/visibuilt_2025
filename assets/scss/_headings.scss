@@ -2,18 +2,18 @@
 
 h1,
 .heading-1 {
-  font-size: 2rem;      // base (mobile ~32px)
+  font-size: 3rem;      // base (mobile ~32px)
 
   @include breakpoint(tablet) {
-    font-size: 2.25rem; // 36px
+    font-size: 4rem; 
   }
 
   @include breakpoint(laptop) {
-    font-size: 2.5rem;  // 40px
+    font-size: 4rem;  
   }
 
   @include breakpoint(desktop) {
-    font-size: 4rem;    // 48px
+    font-size: 5rem;
   }
 }
 
