@@ -32,7 +32,9 @@
                 ) );
             ?>
 
-            <button class="header__burger">menu</button>
+            <button class="<?= is_page('contact') ? 'header__burger header__burger--contact' : 'header__burger' ?>">menu</button>
+
+
 
             <!-- <button class="header__burger">
                 <span></span>

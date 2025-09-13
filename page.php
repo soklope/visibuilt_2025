@@ -17,9 +17,9 @@
             <?php else : ?>
                 
                 <div class="page-heading page-container">
-                    <h1 class="page-heading__title"><?php the_title(); ?></h1>
-                    <hr>
-                    <span class="page-heading__icon"></span>
+                    <h1 class="<?= is_page('contact') ? 'page-heading__title page-heading__title--contact' : 'page-heading__title' ?>"><?php the_title(); ?></h1>
+                    <hr class="<?= is_page('contact') ? 'page-heading__hr page-heading__hr--contact' : 'page-heading__hr' ?>">
+                    <span class="<?= is_page('contact') ? 'page-heading__icon page-heading__icon--contact' : 'page-heading__icon' ?>"></span>
                 </div>
 
             <?php endif; ?>

@@ -137,3 +137,18 @@ function visibuilt_customize_social( $wp_customize ) {
     ) );
 }
 add_action( 'customize_register', 'visibuilt_customize_social' );
+
+function skp_register_block_category( $categories ) {
+    return array_merge(
+        [
+            [
+                'slug'  => 'skp-blocks',
+                'title' => __( 'SKP Blocks', 'skp-theme' ),
+                'icon'  => 'smiley',
+            ],
+        ],
+        $categories
+    );
+}
+add_filter( 'block_categories_all', 'skp_register_block_category', 10, 2 );
+

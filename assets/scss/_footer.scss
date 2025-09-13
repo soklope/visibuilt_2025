@@ -4,8 +4,8 @@
 
 
 .footer {
-    margin-top: 600px;
-
+    margin-top: 120px;
+    
     background-color: $off-white;
     font-size: $font-size-sm;
     padding: 40px 0;
@@ -28,6 +28,10 @@
         @include breakpoint(laptop) {
             flex-direction: row;
             gap: 40px;
+        }
+
+        a {
+            color: $black;
         }
     }
 

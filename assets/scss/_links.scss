@@ -1,0 +1,10 @@
+@use 'breakpoints' as *;
+@use 'variables' as *;
+
+a {
+    color: $yellow;
+
+    &:hover {
+        color: $black;
+    }
+}

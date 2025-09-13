@@ -1,9 +1,9 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "skp-blocks/text-image",
+  "name": "skp-blocks/contact-info",
   "version": "0.1.0",
-  "title": "Text Image",
+  "title": "Contact Info",
   "category": "skp-blocks",
   "icon": "smiley",
   "description": "Example block scaffolded with Create Block tool.",
@@ -20,9 +20,9 @@
       "type": "string",
       "default": "Your content here..."
     },
-    "imageUrl": {
+    "marginSize": {
       "type": "string",
-      "default": ""
+      "default": "m"
     }
   },
   "textdomain": "skp-theme",

@@ -1,0 +1,18 @@
+@use '../../assets/scss/breakpoints' as *;
+@use '../../assets/scss/variables' as *;
+
+.skp-contact-info {
+
+    &__heading {
+        color: $off-white;
+        margin-bottom: 8px;
+
+        @include breakpoint(laptop) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__text {
+        color: $off-white;
+    }
+}

@@ -96,20 +96,34 @@ html {
     max-width: 1140px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1537px) {
   .page-container {
     max-width: 1440px;
   }
 }
 
+.header {
+  margin-bottom: 24px;
+}
 @media (min-width: 768px) {
   .header {
     padding: 0 16px;
   }
 }
+@media (min-width: 1024px) {
+  .header {
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 1537px) {
+  .header {
+    margin-bottom: 80px;
+  }
+}
 .header a {
   font-weight: 500;
   transition: 0.2s;
+  color: #000000;
 }
 .header a:hover {
   transition: 0.2s;
@@ -136,6 +150,9 @@ html {
     display: none;
   }
 }
+.header__burger--contact {
+  color: #FEFFF1;
+}
 .header__navigation {
   display: none;
 }
@@ -145,7 +162,7 @@ html {
     gap: 40px;
   }
 }
-.header__navigation--contact {
+.header__navigation--contact a {
   color: #FEFFF1;
 }
 .header .header__mega-menu-container {
@@ -209,7 +226,7 @@ html {
   font-display: swap;
 }
 .footer {
-  margin-top: 600px;
+  margin-top: 120px;
   background-color: #FEFFF1;
   font-size: 0.875rem;
   padding: 40px 0;
@@ -234,6 +251,9 @@ html {
     flex-direction: row;
     gap: 40px;
   }
+}
+.footer__navigation a {
+  color: #000000;
 }
 .footer__child-container {
   display: flex;
@@ -297,18 +317,36 @@ hr {
   gap: 24px;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 24px;
 }
 @media (min-width: 768px) {
   .page-heading {
     gap: 40px;
   }
 }
+@media (min-width: 1024px) {
+  .page-heading {
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 1537px) {
+  .page-heading {
+    margin-bottom: 80px;
+  }
+}
 .page-heading__title::after {
   content: ".";
   color: #EE9A32;
 }
-.page-heading hr {
+.page-heading__title--contact {
+  color: #FEFFF1;
+}
+.page-heading__hr {
   flex: 1;
+}
+.page-heading__hr--contact {
+  background-color: #EE9A32;
+  opacity: 1;
 }
 .page-heading__icon {
   display: block;
@@ -320,6 +358,15 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
+}
+@media (min-width: 768px) {
+  .page-heading__icon {
+    height: 32px;
+    width: 32px;
+  }
+}
+.page-heading__icon--contact {
+  filter: brightness(100);
 }
 
 h1,
@@ -338,7 +385,7 @@ h1,
     font-size: 2.5rem;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1537px) {
   h1,
   .heading-1 {
     font-size: 4rem;
@@ -361,7 +408,7 @@ h2,
     font-size: 2.25rem;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1537px) {
   h2,
   .heading-2 {
     font-size: 2.5rem;
@@ -439,5 +486,92 @@ h6,
 @media (min-width: 768px) {
   main {
     padding: 0 16px;
+  }
+}
+
+a {
+  color: #EE9A32;
+}
+a:hover {
+  color: #000000;
+}
+
+/* Extra Small Margin */
+.skp-margin-xs {
+  margin-bottom: 0.75rem; /* mobile ~12px */
+}
+@media (min-width: 768px) {
+  .skp-margin-xs {
+    margin-bottom: 1rem; /* tablet ~16px */
+  }
+}
+@media (min-width: 1024px) {
+  .skp-margin-xs {
+    margin-bottom: 1.25rem; /* laptop ~20px */
+  }
+}
+@media (min-width: 1537px) {
+  .skp-margin-xs {
+    margin-bottom: 1.5rem; /* desktop ~24px */
+  }
+}
+
+/* Small Margin */
+.skp-margin-s {
+  margin-bottom: 1rem; /* mobile ~16px */
+}
+@media (min-width: 768px) {
+  .skp-margin-s {
+    margin-bottom: 1.5rem; /* tablet ~24px */
+  }
+}
+@media (min-width: 1024px) {
+  .skp-margin-s {
+    margin-bottom: 1.75rem; /* laptop ~28px */
+  }
+}
+@media (min-width: 1537px) {
+  .skp-margin-s {
+    margin-bottom: 2rem; /* desktop ~32px */
+  }
+}
+
+/* Medium Margin */
+.skp-margin-m {
+  margin-bottom: 1.5rem; /* mobile ~24px */
+}
+@media (min-width: 768px) {
+  .skp-margin-m {
+    margin-bottom: 2rem; /* tablet ~32px */
+  }
+}
+@media (min-width: 1024px) {
+  .skp-margin-m {
+    margin-bottom: 2.25rem; /* laptop ~36px */
+  }
+}
+@media (min-width: 1537px) {
+  .skp-margin-m {
+    margin-bottom: 2.5rem; /* desktop ~40px */
+  }
+}
+
+/* Large Margin */
+.skp-margin-l {
+  margin-bottom: 2rem; /* mobile ~32px */
+}
+@media (min-width: 768px) {
+  .skp-margin-l {
+    margin-bottom: 2.5rem; /* tablet ~40px */
+  }
+}
+@media (min-width: 1024px) {
+  .skp-margin-l {
+    margin-bottom: 3rem; /* laptop ~48px */
+  }
+}
+@media (min-width: 1537px) {
+  .skp-margin-l {
+    margin-bottom: 3.5rem; /* desktop ~56px */
   }
 }

@@ -1,1 +1,1 @@
-{"version":3,"file":"text-image/style-index.css","mappings":";;;AAAA;EACC;EACA;EACA;AACD,C","sources":["webpack://hero/./src/text-image/style.scss"],"sourcesContent":[".wp-block-skp-blocks-hero {\n\tbackground-color: green;\n\tcolor: #fff;\n\tpadding: 2px;\n}\n"],"names":[],"sourceRoot":""}
+{"version":3,"file":"text-image/style-index.css","mappings":";;;AAAA;EACC;EACA;AACD,C","sources":["webpack://hero/./src/text-image/style.scss"],"sourcesContent":[".wp-block-skp-blocks-hero {\n\tcolor: #fff;\n\tpadding: 2px;\n}\n"],"names":[],"sourceRoot":""}
