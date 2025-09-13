@@ -6,11 +6,12 @@
 .footer {
     margin-top: 600px;
 
+    background-color: $off-white;
     font-size: $font-size-sm;
     padding: 40px 0;
 
     @include breakpoint(laptop) {
-        padding: 160px 0;
+        padding: 160px 16px;
     }
     
     &__inner {

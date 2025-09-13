@@ -2,6 +2,10 @@
 @use 'variables' as *;
 
 .header {
+
+    @include breakpoint(tablet) {
+        padding: 0 16px;
+    }
     
     a {
         font-weight: 500;
@@ -47,7 +51,13 @@
 
         @include breakpoint(desktop) {
         }
+    
+        &--contact {
+            color: $off-white;
+        }
     }
+
+    
 
     .header__mega-menu-container {
         position: fixed;
@@ -77,7 +87,10 @@
     .custom-logo {
         width: 100%;
         max-height: 28px;
-
         filter: brightness(0);
+
+        &--contact {
+            filter: unset;
+        }
     }
 }

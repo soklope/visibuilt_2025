@@ -6,22 +6,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <?php wp_head()?>
     </head>
-<body>
+    
+    <body <?php body_class( is_page( 'contact' ) ? 'body body--contact' : 'body' ); ?>>
 
     <header class="header">
         <div class="page-container header__inner">
             <?php
                 if ( function_exists( 'the_custom_logo' ) ) {
+                    if ( is_page( 'contact' ) ) {
+                        add_filter( 'get_custom_logo', function( $html ) {
+                            $html = str_replace( 'custom-logo', 'custom-logo--contact custom-logo', $html );
+                            return $html;
+                        });
+                    }
                     the_custom_logo();
                 } else {
-                    echo '<h1>' . get_bloginfo( 'name' ) . '</h1>'; 
-                }
+                    echo '<h1 class="' . ( is_page('contact') ? 'site-title site-title--contact' : 'site-title' ) . '">' . get_bloginfo( 'name' ) . '</h1>'; 
+}
 
                 wp_nav_menu( array(
-                    'theme_location' => 'primary_menu',
-                    'container'      => 'nav',
-                    'container_class'=> 'main-navigation',
-                    'menu_class'     => 'header__navigation'
+                    'theme_location'  => 'primary_menu',
+                    'container'       => 'nav',
+                    'container_class' => 'main-navigation',
+                    'menu_class'      => 'header__navigation' . ( is_page( 'contact' ) ? ' header__navigation--contact' : '' ),
                 ) );
             ?>
 

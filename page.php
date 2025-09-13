@@ -22,9 +22,8 @@
                     <span class="page-heading__icon"></span>
                 </div>
 
-        <?php endif; ?>
+            <?php endif; ?>
 
-        
     <?php endif; ?>
 
     <?php 
