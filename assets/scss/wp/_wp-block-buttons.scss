@@ -1,0 +1,29 @@
+@use '../global/breakpoints' as *;
+@use '../global/variables' as *;
+@use '../global/fonts' as *;
+
+.wp-block-button {
+    font-weight: bold;
+    
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content !important;
+        background: none;
+        color: $yellow !important;
+        border-style: none !important;
+
+        &::before {
+            content: "";
+            height: 24px;
+            width: 24px;
+            background-size: contain;
+            background-image: url('../icons/diamond.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            margin-right: 16px;
+        }
+    }
+}

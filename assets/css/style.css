@@ -1,107 +1,3 @@
-/* Box sizing and layout */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* HTML defaults */
-html {
-  line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
-  font-family: sans-serif;
-  scroll-behavior: smooth;
-}
-
-/* Remove default list styles */
-ol, ul {
-  list-style: none;
-}
-
-/* Remove default quotes in blockquotes */
-blockquote, q {
-  quotes: none;
-}
-
-blockquote::before, blockquote::after,
-q::before, q::after {
-  content: "";
-  content: none;
-}
-
-/* Remove table spacing */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* Remove text decoration and inherit color for links */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Remove default image border */
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Form elements reset */
-button, input, select, textarea {
-  font: inherit;
-  margin: 0;
-  border: none;
-  background: none;
-  color: inherit;
-  outline: none;
-  appearance: none;
-}
-
-/* Remove fieldset borders */
-fieldset {
-  border: 0;
-}
-
-/* Remove default horizontal rules */
-hr {
-  border: 0;
-  height: 0;
-  margin: 0;
-}
-
-/* Remove default focus outline for better styling control */
-:focus {
-  outline: none;
-}
-
-/* Optional: smooth scroll for anchor links */
-html {
-  scroll-behavior: smooth;
-}
-
-.page-container {
-  margin: 0 auto;
-  width: 90%;
-}
-@media (min-width: 768px) {
-  .page-container {
-    width: 100%;
-    max-width: 720px;
-  }
-}
-@media (min-width: 1024px) {
-  .page-container {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 1537px) {
-  .page-container {
-    max-width: 1440px;
-  }
-}
-
 @font-face {
   font-family: "NeueMontreal";
   src: url("../fonts/NeueMontreal/NeueMontreal-Light.otf") format("opentype");
@@ -308,6 +204,110 @@ html {
   width: 100%;
   max-height: 28px;
   filter: brightness(0);
+}
+
+/* Box sizing and layout */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML defaults */
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Remove default list styles */
+ol, ul {
+  list-style: none;
+}
+
+/* Remove default quotes in blockquotes */
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: "";
+  content: none;
+}
+
+/* Remove table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove text decoration and inherit color for links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default image border */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form elements reset */
+button, input, select, textarea {
+  font: inherit;
+  margin: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  outline: none;
+  appearance: none;
+}
+
+/* Remove fieldset borders */
+fieldset {
+  border: 0;
+}
+
+/* Remove default horizontal rules */
+hr {
+  border: 0;
+  height: 0;
+  margin: 0;
+}
+
+/* Remove default focus outline for better styling control */
+:focus {
+  outline: none;
+}
+
+/* Optional: smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+.page-container {
+  margin: 0 auto;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .page-container {
+    width: 100%;
+    max-width: 720px;
+  }
+}
+@media (min-width: 1024px) {
+  .page-container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1537px) {
+  .page-container {
+    max-width: 1440px;
+  }
 }
 
 .body {
@@ -628,4 +628,93 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
+}
+
+.wp-block-columns {
+  gap: 16px;
+}
+
+.wp-block-image {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.wp-block-image a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.wp-block-image a::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "explore";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #FFFFFF;
+  font-size: 2.25rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 1s ease;
+  pointer-events: none;
+}
+.wp-block-image a:hover::after {
+  opacity: 1;
+}
+.wp-block-image:hover img {
+  transition: 1s ease;
+  scale: 1.05;
+}
+@media (min-width: 768px) {
+  .wp-block-image {
+    height: 480px;
+  }
+}
+@media (min-width: 1024px) {
+  .wp-block-image {
+    height: 640px;
+  }
+}
+@media (min-width: 1537px) {
+  .wp-block-image {
+    height: 720px;
+  }
+}
+.wp-block-image img {
+  transition: 1s ease;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wp-block-button {
+  font-weight: bold;
+}
+.wp-block-button__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content !important;
+  background: none;
+  color: #EE9A32 !important;
+  border-style: none !important;
+}
+.wp-block-button__link::before {
+  content: "";
+  height: 24px;
+  width: 24px;
+  background-size: contain;
+  background-image: url("../icons/diamond.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin-right: 16px;
 }

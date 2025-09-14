@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/contact-info/block.json":
@@ -8,6 +7,7 @@
   \*************************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"skp-blocks/contact-info","version":"0.1.0","title":"Contact Info","category":"skp-blocks","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false},"attributes":{"heading":{"type":"string","default":"Your Heading Here"},"content":{"type":"string","default":"Your content here..."},"marginSize":{"type":"string","default":"m"}},"textdomain":"skp-theme","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ }),
@@ -18,6 +18,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/tru
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Edit)
@@ -104,33 +105,9 @@ function Edit({
 /*!**************************************!*\
   !*** ./src/contact-info/editor.scss ***!
   \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./src/contact-info/index.js":
-/*!***********************************!*\
-  !*** ./src/contact-info/index.js ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
-/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/contact-info/style.scss");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/contact-info/edit.js");
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block.json */ "./src/contact-info/block.json");
-
-
-
-
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_3__.name, {
-  edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"]
-});
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nCan't find stylesheet to import.\n  ╷\n1 │ @use '../../assets/scss/variables' as *;\r\n  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  ╵\n  src\\contact-info\\editor.scss 1:1  root stylesheet\n    at tryRunOrWebpackError (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\HookWebpackError.js:87:9)\n    at __webpack_require_module__ (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5515:12)\n    at __webpack_require__ (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5462:18)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5550:20\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\HookCodeFactory.js:31:10), <anonymous>:15:1)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5437:43\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5399:16\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3485:9)\n    at timesSync (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5367:15\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3527:9)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5313:8\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:3713:6\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\HookWebpackError.js:68:2\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\HookCodeFactory.js:31:10), <anonymous>:15:1)\n    at Cache.store (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Cache.js:113:20)\n    at ItemCacheFacade.store (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\CacheFacade.js:142:15)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:3712:11\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Cache.js:99:5\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\HookCodeFactory.js:31:10), <anonymous>:16:1)\n    at Cache.get (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Cache.js:81:18)\n    at ItemCacheFacade.get (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\CacheFacade.js:116:15)\n    at Compilation._codeGenerationModule (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:3680:9)\n    at codeGen (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5301:11)\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5331:14\n    at processQueue (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\util\\processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)\n-- inner error --\nError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nCan't find stylesheet to import.\n  ╷\n1 │ @use '../../assets/scss/variables' as *;\r\n  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  ╵\n  src\\contact-info\\editor.scss 1:1  root stylesheet\n    at Object.<anonymous> (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\css-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[1]!C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\postcss-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[2]!C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\sass-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[3]!C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\src\\contact-info\\editor.scss:1:7)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\javascript\\JavascriptModulesPlugin.js:544:10\n    at Hook.eval [as call] (eval at create (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\HookCodeFactory.js:19:10), <anonymous>:7:1)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5517:39\n    at tryRunOrWebpackError (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\HookWebpackError.js:82:7)\n    at __webpack_require_module__ (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5515:12)\n    at __webpack_require__ (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5462:18)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5550:20\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\HookCodeFactory.js:31:10), <anonymous>:15:1)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5437:43\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5399:16\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3485:9)\n    at timesSync (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5367:15\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3527:9)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5313:8\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:3713:6\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\HookWebpackError.js:68:2\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\HookCodeFactory.js:31:10), <anonymous>:15:1)\n    at Cache.store (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Cache.js:113:20)\n    at ItemCacheFacade.store (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\CacheFacade.js:142:15)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:3712:11\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Cache.js:99:5\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\HookCodeFactory.js:31:10), <anonymous>:16:1)\n    at Cache.get (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Cache.js:81:18)\n    at ItemCacheFacade.get (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\CacheFacade.js:116:15)\n    at Compilation._codeGenerationModule (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:3680:9)\n    at codeGen (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5301:11)\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5331:14\n    at processQueue (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\util\\processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)\n\nGenerated code for C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\css-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[1]!C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\postcss-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[2]!C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\sass-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[3]!C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\src\\contact-info\\editor.scss\n1 | throw new Error(\"Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nCan't find stylesheet to import.\\n  ╷\\n1 │ @use '../../assets/scss/variables' as *;\\r\\n  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  ╵\\n  src\\\\contact-info\\\\editor.scss 1:1  root stylesheet\");");
 
 /***/ }),
 
@@ -138,11 +115,9 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************!*\
   !*** ./src/contact-info/style.scss ***!
   \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nCan't find stylesheet to import.\n  ╷\n1 │ @use '../../assets/scss/breakpoints' as *;\n  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  ╵\n  src\\contact-info\\style.scss 1:1  root stylesheet\n    at tryRunOrWebpackError (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\HookWebpackError.js:87:9)\n    at __webpack_require_module__ (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5515:12)\n    at __webpack_require__ (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5462:18)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5550:20\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\HookCodeFactory.js:31:10), <anonymous>:15:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\Hook.js:21:14)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5437:43\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5399:16\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3485:9)\n    at timesSync (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5367:15\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3527:9)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5313:8\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:3713:6\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\HookWebpackError.js:68:2\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\HookCodeFactory.js:31:10), <anonymous>:15:1)\n    at Cache.store (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Cache.js:113:20)\n    at ItemCacheFacade.store (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\CacheFacade.js:142:15)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:3712:11\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Cache.js:99:5\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\HookCodeFactory.js:31:10), <anonymous>:16:1)\n    at Cache.get (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Cache.js:81:18)\n    at ItemCacheFacade.get (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\CacheFacade.js:116:15)\n    at Compilation._codeGenerationModule (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:3680:9)\n    at codeGen (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5301:11)\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5331:14\n    at processQueue (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\util\\processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)\n-- inner error --\nError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nCan't find stylesheet to import.\n  ╷\n1 │ @use '../../assets/scss/breakpoints' as *;\n  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  ╵\n  src\\contact-info\\style.scss 1:1  root stylesheet\n    at Object.<anonymous> (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\css-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[1]!C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\postcss-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[2]!C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\sass-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[3]!C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\src\\contact-info\\style.scss:1:7)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\javascript\\JavascriptModulesPlugin.js:544:10\n    at Hook.eval [as call] (eval at create (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\HookCodeFactory.js:19:10), <anonymous>:7:1)\n    at Hook.CALL_DELEGATE [as _call] (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\Hook.js:16:14)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5517:39\n    at tryRunOrWebpackError (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\HookWebpackError.js:82:7)\n    at __webpack_require_module__ (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5515:12)\n    at __webpack_require__ (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5462:18)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5550:20\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\HookCodeFactory.js:31:10), <anonymous>:15:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\Hook.js:21:14)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5437:43\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5399:16\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3485:9)\n    at timesSync (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5367:15\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3527:9)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5313:8\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:3713:6\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\HookWebpackError.js:68:2\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\HookCodeFactory.js:31:10), <anonymous>:15:1)\n    at Cache.store (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Cache.js:113:20)\n    at ItemCacheFacade.store (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\CacheFacade.js:142:15)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:3712:11\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Cache.js:99:5\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\tapable\\lib\\HookCodeFactory.js:31:10), <anonymous>:16:1)\n    at Cache.get (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Cache.js:81:18)\n    at ItemCacheFacade.get (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\CacheFacade.js:116:15)\n    at Compilation._codeGenerationModule (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:3680:9)\n    at codeGen (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5301:11)\n    at symbolIterator (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\Compilation.js:5331:14\n    at processQueue (C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\webpack\\lib\\util\\processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)\n\nGenerated code for C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\css-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[1]!C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\postcss-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[2]!C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\node_modules\\sass-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[3]!C:\\Users\\skp21\\Local Sites\\visibuilt2025\\app\\public\\wp-content\\themes\\visibuilt_2025\\src\\contact-info\\style.scss\n1 | throw new Error(\"Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nCan't find stylesheet to import.\\n  ╷\\n1 │ @use '../../assets/scss/breakpoints' as *;\\n  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  ╵\\n  src\\\\contact-info\\\\style.scss 1:1  root stylesheet\");");
 
 /***/ }),
 
@@ -152,6 +127,7 @@ __webpack_require__.r(__webpack_exports__);
   \*************************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["blockEditor"];
 
 /***/ }),
@@ -162,6 +138,7 @@ module.exports = window["wp"]["blockEditor"];
   \********************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["blocks"];
 
 /***/ }),
@@ -172,6 +149,7 @@ module.exports = window["wp"]["blocks"];
   \************************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["components"];
 
 /***/ }),
@@ -182,6 +160,7 @@ module.exports = window["wp"]["components"];
   \******************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["i18n"];
 
 /***/ }),
@@ -192,6 +171,7 @@ module.exports = window["wp"]["i18n"];
   \**********************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["ReactJSXRuntime"];
 
 /***/ })
@@ -222,42 +202,7 @@ module.exports = window["ReactJSXRuntime"];
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/chunk loaded */
-/******/ 	(() => {
-/******/ 		var deferred = [];
-/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
-/******/ 			if(chunkIds) {
-/******/ 				priority = priority || 0;
-/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
-/******/ 				deferred[i] = [chunkIds, fn, priority];
-/******/ 				return;
-/******/ 			}
-/******/ 			var notFulfilled = Infinity;
-/******/ 			for (var i = 0; i < deferred.length; i++) {
-/******/ 				var [chunkIds, fn, priority] = deferred[i];
-/******/ 				var fulfilled = true;
-/******/ 				for (var j = 0; j < chunkIds.length; j++) {
-/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
-/******/ 						chunkIds.splice(j--, 1);
-/******/ 					} else {
-/******/ 						fulfilled = false;
-/******/ 						if(priority < notFulfilled) notFulfilled = priority;
-/******/ 					}
-/******/ 				}
-/******/ 				if(fulfilled) {
-/******/ 					deferred.splice(i--, 1)
-/******/ 					var r = fn();
-/******/ 					if (r !== undefined) result = r;
-/******/ 				}
-/******/ 			}
-/******/ 			return result;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -298,68 +243,29 @@ module.exports = window["ReactJSXRuntime"];
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		// no baseURI
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		var installedChunks = {
-/******/ 			"contact-info/index": 0,
-/******/ 			"contact-info/style-index": 0
-/******/ 		};
-/******/ 		
-/******/ 		// no chunk on demand loading
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
-/******/ 		
-/******/ 		// install a JSONP callback for chunk loading
-/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
-/******/ 			var [chunkIds, moreModules, runtime] = data;
-/******/ 			// add "moreModules" to the modules object,
-/******/ 			// then flag all "chunkIds" as loaded and fire callback
-/******/ 			var moduleId, chunkId, i = 0;
-/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
-/******/ 				for(moduleId in moreModules) {
-/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
-/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
-/******/ 					}
-/******/ 				}
-/******/ 				if(runtime) var result = runtime(__webpack_require__);
-/******/ 			}
-/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
-/******/ 			for(;i < chunkIds.length; i++) {
-/******/ 				chunkId = chunkIds[i];
-/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
-/******/ 					installedChunks[chunkId][0]();
-/******/ 				}
-/******/ 				installedChunks[chunkId] = 0;
-/******/ 			}
-/******/ 			return __webpack_require__.O(result);
-/******/ 		}
-/******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkhero"] = globalThis["webpackChunkhero"] || [];
-/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
-/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
-/******/ 	})();
-/******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["contact-info/style-index"], () => (__webpack_require__("./src/contact-info/index.js")))
-/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
-/******/ 	
+var __webpack_exports__ = {};
+// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
+(() => {
+"use strict";
+/*!***********************************!*\
+  !*** ./src/contact-info/index.js ***!
+  \***********************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/contact-info/style.scss");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/contact-info/edit.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block.json */ "./src/contact-info/block.json");
+
+
+
+
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_3__.name, {
+  edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"]
+});
+})();
+
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map

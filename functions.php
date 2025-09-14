@@ -138,6 +138,10 @@ function visibuilt_customize_social( $wp_customize ) {
 }
 add_action( 'customize_register', 'visibuilt_customize_social' );
 
+
+
+
+
 function skp_register_block_category( $categories ) {
     return array_merge(
         [
@@ -152,3 +156,46 @@ function skp_register_block_category( $categories ) {
 }
 add_filter( 'block_categories_all', 'skp_register_block_category', 10, 2 );
 
+
+
+
+
+
+function add_page_container_to_columns( $block_content, $block ) {
+    if ( $block['blockName'] === 'core/columns' ) {
+        $block_content = str_replace(
+            'wp-block-columns',
+            'wp-block-columns page-container',
+            $block_content
+        );
+    }
+    return $block_content;
+}
+add_filter( 'render_block', 'add_page_container_to_columns', 10, 2 );
+
+
+
+
+
+function mytheme_set_default_image_aspect_ratio() {
+    wp_add_inline_script(
+        'wp-blocks',
+        "
+        wp.hooks.addFilter(
+            'blocks.registerBlockType',
+            'mytheme/set-default-image-aspect-ratio',
+            function( settings, name ) {
+                if ( name === 'core/image' ) {
+                    settings.attributes = settings.attributes || {};
+                    settings.attributes.aspectRatio = {
+                        type: 'string',
+                        default: '9/16' // 👈 change this to your desired default
+                    };
+                }
+                return settings;
+            }
+        );
+        "
+    );
+}
+add_action( 'enqueue_block_editor_assets', 'mytheme_set_default_image_aspect_ratio' );

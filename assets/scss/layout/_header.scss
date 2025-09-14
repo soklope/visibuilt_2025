@@ -1,6 +1,6 @@
-@use 'breakpoints' as *;
-@use 'variables' as *;
-@use 'fonts' as *;
+@use '../global/breakpoints' as *;
+@use '../global/variables' as *;
+@use '../global/fonts' as *;
 
 .header {
     position: sticky;
