@@ -1,0 +1,31 @@
+@use '../../assets/scss/global/breakpoints' as *;
+@use '../../assets/scss/global/variables' as *;
+
+.skp-tagline {
+    display: flex;
+    font-weight: bold;
+    color: $yellow;
+    letter-spacing: $letter-spacing;
+    font-size: $font-size-xs;
+
+    @include breakpoint(tablet) {
+        font-size: $font-size-xs;
+        align-items: center; 
+    }
+
+    @include breakpoint(laptop) {
+        font-size: $font-size-sm;
+    }
+
+    @include breakpoint(desktop) {
+        font-size: $font-size-md;
+    }
+
+    &::before {
+        content: "";
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+        background: url('../../assets/icons/trihex/olive/1.png') center / contain no-repeat;
+    }
+}

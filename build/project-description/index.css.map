@@ -1,0 +1,1 @@
+{"version":3,"file":"project-description/index.css","mappings":";;;AAEA;EACI;AADJ,C","sources":["webpack://hero/./src/project-description/editor.scss"],"sourcesContent":["@use '../../assets/scss/global/variables' as *;\r\n\r\n.skp-project-description {\r\n    padding: 0;\r\n}"],"names":[],"sourceRoot":""}

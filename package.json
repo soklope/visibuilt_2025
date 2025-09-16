@@ -14,7 +14,8 @@
 		"plugin-zip": "wp-scripts plugin-zip",
 		"build:scss": "sass assets/scss/style.scss assets/css/style.css --no-source-map",
 		"watch:scss": "sass --watch assets/scss/style.scss:assets/css/style.css --no-source-map",
-		"start": "concurrently \"npm run watch:scss\" \"wp-scripts start --webpack-copy-php --blocks-manifest\""
+		"start": "concurrently \"npm run watch:scss\" \"wp-scripts start --webpack-copy-php --blocks-manifest\"",
+		"build:theme": "npm run build && npm run build:scss && powershell -Command \"Get-ChildItem -Path . -Recurse -Exclude node_modules,.git,package.json,package-lock.json | Compress-Archive -DestinationPath $env:USERPROFILE\\Desktop\\my-theme.zip -Force\""
 	},
 	"devDependencies": {
 		"@wordpress/browserslist-config": "^6.29.0",

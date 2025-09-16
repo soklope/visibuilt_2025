@@ -11,7 +11,7 @@
                 <h1 class="page-heading__title">
                     <?php echo get_the_title( $parent_id ); ?>
                 </h1>
-                <hr>
+                <hr class="page-heading__hr">
                 <h3 class="page-heading__sub-title"><?php the_title(); ?></h3>
             </div>
             

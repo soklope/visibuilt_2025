@@ -328,13 +328,16 @@ hr {
 
 .page-heading {
   display: flex;
-  gap: 24px;
-  align-items: center;
-  justify-content: space-between;
   margin-bottom: 24px;
+  text-transform: lowercase;
+  white-space: nowrap;
+  flex-direction: column;
 }
 @media (min-width: 768px) {
   .page-heading {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
     gap: 40px;
   }
 }
@@ -348,15 +351,17 @@ hr {
     margin-bottom: 80px;
   }
 }
-.page-heading__title::after {
-  content: ".";
-  color: #EE9A32;
-}
 .page-heading__title--contact {
   color: #FEFFF1;
 }
 .page-heading__hr {
-  flex: 1;
+  display: none;
+}
+@media (min-width: 768px) {
+  .page-heading__hr {
+    display: block;
+    flex: 1;
+  }
 }
 .page-heading__hr--contact {
   background-color: #EE9A32;
@@ -631,7 +636,12 @@ a:hover {
 }
 
 .wp-block-columns {
-  gap: 16px;
+  gap: 40px;
+}
+@media (min-width: 1024px) {
+  .wp-block-columns {
+    gap: 16px;
+  }
 }
 
 .wp-block-image {
@@ -695,26 +705,48 @@ a:hover {
   display: block;
 }
 
-.wp-block-button {
-  font-weight: bold;
-}
 .wp-block-button__link {
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
   width: fit-content !important;
   background: none;
-  color: #EE9A32 !important;
   border-style: none !important;
+  padding: 0;
+  margin-top: 24px !important;
+  letter-spacing: 3px;
 }
 .wp-block-button__link::before {
   content: "";
   height: 24px;
   width: 24px;
-  background-size: contain;
-  background-image: url("../icons/diamond.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: cover;
   margin-right: 16px;
+  background: url("../icons/flower/olive/2.png") center/contain no-repeat;
+}
+.wp-block-button__link {
+  color: #EE9A32;
+}
+
+.is-style-outline .wp-block-button__link {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content !important;
+  background: none;
+  border-style: none !important;
+  padding: 0;
+  margin-top: 24px !important;
+  letter-spacing: 3px;
+}
+.is-style-outline .wp-block-button__link::before {
+  content: "";
+  height: 24px;
+  width: 24px;
+  margin-right: 16px;
+  background: url("../icons/flower/mustard/2.png") center/contain no-repeat;
+}
+.is-style-outline .wp-block-button__link {
+  color: #2D342A;
 }
