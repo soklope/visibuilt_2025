@@ -1,0 +1,15 @@
+
+.wp-block {
+    max-width: 1200px;
+    font-family: 'NeueMontreal';
+}
+
+/* Wide width blocks */
+.wp-block[data-align="wide"] {
+    max-width: 1400px;
+}
+
+/* Full width blocks */
+.wp-block[data-align="full"] {
+    max-width: none;
+}

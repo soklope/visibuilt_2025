@@ -4,11 +4,16 @@
 .skp-project-description {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 @media (min-width: 1024px) {
   .skp-project-description {
     padding: 0 32px;
+  }
+}
+@media (min-width: 1537px) {
+  .skp-project-description {
+    gap: 24px;
   }
 }
 .skp-project-description .wp-block-button__link {

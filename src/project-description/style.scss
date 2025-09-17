@@ -4,10 +4,15 @@
 .skp-project-description {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
+
     
     @include breakpoint(laptop) {
         padding: 0 32px;
+    }
+
+    @include breakpoint(desktop) {
+        gap: 24px;
     }
 
     .wp-block-button__link {
