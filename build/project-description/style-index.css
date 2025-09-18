@@ -6,11 +6,6 @@
   flex-direction: column;
   gap: 16px;
 }
-@media (min-width: 1024px) {
-  .skp-project-description {
-    padding: 0 32px;
-  }
-}
 @media (min-width: 1537px) {
   .skp-project-description {
     gap: 24px;

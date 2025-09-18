@@ -166,17 +166,22 @@ add_filter( 'block_categories_all', 'skp_register_block_category', 10, 2 );
 
 
 
-function add_page_container_to_columns( $block_content, $block ) {
-    if ( $block['blockName'] === 'core/columns' ) {
+function add_page_container_to_blocks( $block_content, $block ) {
+    $targets = [ 'core/columns', 'core/gallery' ];
+
+    if ( in_array( $block['blockName'], $targets, true ) ) {
+        $slug = str_replace( 'core/', '', $block['blockName'] );
+
         $block_content = str_replace(
-            'wp-block-columns',
-            'wp-block-columns page-container',
+            "wp-block-{$slug}",
+            "wp-block-{$slug} page-container",
             $block_content
         );
     }
+
     return $block_content;
 }
-add_filter( 'render_block', 'add_page_container_to_columns', 10, 2 );
+add_filter( 'render_block', 'add_page_container_to_blocks', 10, 2 );
 
 
 

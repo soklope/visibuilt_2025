@@ -6,7 +6,11 @@
 .wp-block-columns {
     gap: 40px;
 
+    @include breakpoint(tablet) {
+        flex-direction: column;
+    }
+
     @include breakpoint(laptop) {
-        gap: 16px;
+        flex-direction: row;
     }
 }

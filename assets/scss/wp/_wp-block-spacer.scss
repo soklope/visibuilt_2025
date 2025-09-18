@@ -1,0 +1,17 @@
+@use '../global/breakpoints' as *;
+
+.wp-block-spacer {
+    height: 64px !important;
+
+    @include breakpoint(tablet) {
+        height: 80px !important;
+    }
+
+    @include breakpoint(laptop) {
+        height: 120px !important;
+    }
+
+    @include breakpoint(desktop) {
+        height: 160px !important;
+    }
+} 

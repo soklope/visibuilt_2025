@@ -1,0 +1,36 @@
+@use '../global/breakpoints' as *;
+
+.wp-block-gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint(laptop) {
+        flex-wrap: nowrap;
+    }
+}
+
+.wp-block-gallery .wp-block-image {
+    transition: none;
+    flex: 1 1 100%;
+
+    @include breakpoint(tablet) {
+        flex: 1 1 calc(50% - 4px);
+    }
+
+    @include breakpoint(laptop) {
+        flex: 1 1 50%;
+        transition: flex 1s ease, transform 1s ease;
+    }
+}
+
+
+@include breakpoint(laptop) {
+
+    .wp-block-gallery .wp-block-image:hover {
+        flex: 2 1 100%; 
+    }
+        
+    .wp-block-gallery .wp-block-image:not(:hover) {
+        flex: 1 1 20%; 
+    }
+}
