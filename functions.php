@@ -167,7 +167,7 @@ add_filter( 'block_categories_all', 'skp_register_block_category', 10, 2 );
 
 
 function add_page_container_to_blocks( $block_content, $block ) {
-    $targets = [ 'core/columns', 'core/gallery' ];
+    $targets = [ 'core/columns', 'core/gallery', 'core/query' ];
 
     if ( in_array( $block['blockName'], $targets, true ) ) {
         $slug = str_replace( 'core/', '', $block['blockName'] );

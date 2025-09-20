@@ -1,0 +1,32 @@
+@use '../global/breakpoints' as *;
+@use '../global/variables' as *;
+@use '../global/fonts' as *;
+
+.wp-block-query {
+
+    .wp-block-post-template-is-layout-grid {
+        gap: 16px;
+    }
+
+    .wp-block-group {
+        padding: 0 !important;
+    }
+
+    .wp-block-post-title a {
+        color: $black;
+        font-size: $font-size-md;
+        font-weight: 400 !important;
+    }
+
+    .wp-block-group {
+        &__inner-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+    img {
+        aspect-ratio: 1/1;
+
+    }
+}

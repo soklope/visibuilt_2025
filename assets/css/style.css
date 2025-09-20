@@ -797,7 +797,7 @@ a:hover {
 @media (min-width: 1024px) {
   .wp-block-gallery .wp-block-image {
     flex: 1 1 50%;
-    transition: flex 1s ease, transform 1s ease;
+    transition: flex 1.5s ease, transform 1.5s ease;
   }
 }
 
@@ -808,4 +808,23 @@ a:hover {
   .wp-block-gallery .wp-block-image:not(:hover) {
     flex: 1 1 20%;
   }
+}
+.wp-block-query .wp-block-post-template-is-layout-grid {
+  gap: 16px;
+}
+.wp-block-query .wp-block-group {
+  padding: 0 !important;
+}
+.wp-block-query .wp-block-post-title a {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 400 !important;
+}
+.wp-block-query .wp-block-group__inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.wp-block-query img {
+  aspect-ratio: 1/1;
 }
