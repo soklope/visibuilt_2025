@@ -809,22 +809,51 @@ a:hover {
     flex: 1 1 20%;
   }
 }
-.wp-block-query .wp-block-post-template-is-layout-grid {
-  gap: 16px;
+.wp-block-post-template {
+  gap: 32px;
 }
-.wp-block-query .wp-block-group {
+@media (min-width: 768px) {
+  .wp-block-post-template {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+@media (min-width: 1024px) {
+  .wp-block-post-template {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+.wp-block-post-template .wp-block-group {
   padding: 0 !important;
 }
-.wp-block-query .wp-block-post-title a {
+.wp-block-post-template .wp-block-post-title a {
   color: #000000;
   font-size: 1rem;
   font-weight: 400 !important;
 }
-.wp-block-query .wp-block-group__inner-container {
+.wp-block-post-template .wp-block-post-date {
+  font-weight: bold;
+}
+.wp-block-post-template .wp-block-group__inner-container {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.wp-block-query img {
+.wp-block-post-template img {
   aspect-ratio: 1/1;
+}
+.wp-block-post-template .wp-block-post-excerpt__excerpt {
+  display: none !important;
+}
+.wp-block-post-template .wp-block-post-excerpt__more-link {
+  text-transform: lowercase;
+  font-weight: bold;
+  display: flex;
+  justify-content: end;
+}
+.wp-block-post-template .wp-block-post-excerpt__more-link::before {
+  content: "";
+  height: 24px;
+  width: 24px;
+  margin-right: 16px;
+  background: url("../icons/flower/olive/1.png") center/contain no-repeat;
 }
