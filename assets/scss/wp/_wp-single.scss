@@ -1,0 +1,56 @@
+@use '../global/breakpoints' as *;
+
+.single {
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__hero {
+        margin-bottom: 16px;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            max-height: 400px;
+
+
+            @include breakpoint(tablet) {
+                max-height: 640px;
+            }
+
+            @include breakpoint(laptop) {
+                max-height: 480px;
+
+            }
+
+            @include breakpoint(desktop) {
+                max-height: 640px;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        div {
+            width: 100% !important;
+        }
+    }
+    
+
+
+    .wp-block-columns {
+        gap: 0;
+
+        p {
+            margin-bottom: 32px;
+        }
+
+        @include breakpoint(laptop) {
+            gap: 40px;
+        }
+    }
+}

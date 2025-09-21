@@ -19,13 +19,14 @@
     }
 
     .wp-block-post-title a {
-        color: $black;
+        color: $dark-green;
         font-size: $font-size-md;
         font-weight: 400 !important;
     }
 
     .wp-block-post-date {
         font-weight: bold;
+        color: $dark-green;
     }
 
     .wp-block-group {
@@ -35,9 +36,21 @@
             gap: 8px;
         }
     }
+
+    .wp-block-post-featured-image {
+        overflow: hidden;
+    }
+
     img {
         aspect-ratio: 1/1;
+        transition: 1s ease;
+        object-fit: cover;
+        display: block;
 
+        &:hover  {
+            transition: 1s ease;
+            scale: 1.05;
+        }
     }
 
     .wp-block-post-excerpt {
@@ -56,7 +69,7 @@
                 height: 24px;
                 width: 24px;
                 margin-right: 16px;
-                background: url('../icons/flower/olive/1.png') center / contain no-repeat;
+                background: url('../icons/flower/olive/2.png') center / contain no-repeat;
             }
         }
     }

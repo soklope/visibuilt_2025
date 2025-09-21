@@ -826,20 +826,31 @@ a:hover {
   padding: 0 !important;
 }
 .wp-block-post-template .wp-block-post-title a {
-  color: #000000;
+  color: #2D342A;
   font-size: 1rem;
   font-weight: 400 !important;
 }
 .wp-block-post-template .wp-block-post-date {
   font-weight: bold;
+  color: #2D342A;
 }
 .wp-block-post-template .wp-block-group__inner-container {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
+.wp-block-post-template .wp-block-post-featured-image {
+  overflow: hidden;
+}
 .wp-block-post-template img {
   aspect-ratio: 1/1;
+  transition: 1s ease;
+  object-fit: cover;
+  display: block;
+}
+.wp-block-post-template img:hover {
+  transition: 1s ease;
+  scale: 1.05;
 }
 .wp-block-post-template .wp-block-post-excerpt__excerpt {
   display: none !important;
@@ -855,5 +866,51 @@ a:hover {
   height: 24px;
   width: 24px;
   margin-right: 16px;
-  background: url("../icons/flower/olive/1.png") center/contain no-repeat;
+  background: url("../icons/flower/olive/2.png") center/contain no-repeat;
+}
+
+.single__title {
+  margin-bottom: 16px;
+}
+.single__hero {
+  margin-bottom: 16px;
+}
+.single__hero img {
+  object-fit: cover;
+  height: 100%;
+  max-height: 400px;
+}
+@media (min-width: 768px) {
+  .single__hero img {
+    max-height: 640px;
+  }
+}
+@media (min-width: 1024px) {
+  .single__hero img {
+    max-height: 480px;
+  }
+}
+@media (min-width: 1537px) {
+  .single__hero img {
+    max-height: 640px;
+  }
+}
+.single__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.single__content div {
+  width: 100% !important;
+}
+.single .wp-block-columns {
+  gap: 0;
+}
+.single .wp-block-columns p {
+  margin-bottom: 32px;
+}
+@media (min-width: 1024px) {
+  .single .wp-block-columns {
+    gap: 40px;
+  }
 }
