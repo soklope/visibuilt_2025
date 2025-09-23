@@ -1,0 +1,156 @@
+@use '../../assets/scss/global/breakpoints' as *;
+@use '../../assets/scss/global/variables' as *;
+
+.skp-image-w-text-overlay {
+    position: relative;
+    min-height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+
+    @include breakpoint(tablet) {
+    }
+
+    @include breakpoint(laptop) {
+    }
+
+    @include breakpoint(desktop) {
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($dark-green, 0.75);
+        z-index: 1; 
+    }
+
+    & > * {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        justify-content: space-between;
+    }
+
+    &__inner-blocks {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__art {
+        display: block;
+        content: "";
+        width: 256px;       
+        height: 157px;      
+        z-index: 3;
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: center;
+        scale: .7;
+
+        @include breakpoint(tablet) {
+            scale: .8;
+        }
+
+        @include breakpoint(laptop) {
+            scale: .9;
+        }
+
+        @include breakpoint(desktop) {
+            scale: 1;
+        }
+
+        &--top {
+            background: url('../../assets/graphic/hex-overlay-art.svg');
+            transform: rotate(180deg);
+            align-self: flex-end;
+            margin-top: -40px;
+
+            @include breakpoint(tablet) {
+                margin-top: -40px;
+            }
+
+            @include breakpoint(laptop) {
+                margin-top: -32px;
+            
+            }
+
+            @include breakpoint(desktop) {
+                margin-top: -24px;
+            
+            }
+        }
+
+        &--bottom {
+            background: url('../../assets/graphic/hex-overlay-art.svg');
+            align-self: flex-start;
+            margin-bottom: -40px;
+
+            @include breakpoint(tablet) {
+            }
+
+            @include breakpoint(laptop) {
+                margin-bottom: -32px;
+            }
+
+            @include breakpoint(desktop) {
+                margin-bottom: -24px;
+            }
+        }
+    }
+
+    .skp-tagline {
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            font-size: $font-size-md;
+            color: $yellow;
+        }
+
+        &::before {
+            filter: brightness(100);
+        }
+    }
+
+    .wp-block-button {
+        &__link {
+            color: $off-white;
+
+            &::before {
+                background: url('../../assets/icons/flower/mustard/2.png')  center / contain no-repeat;
+            }
+        }
+    }
+
+    p {
+        font-size: $font-size-2xl;
+        font-weight: bold;
+        color: $off-white;
+        text-align: center;
+
+        @include breakpoint(tablet) {
+            font-size: $font-size-4xl;
+        }
+
+        @include breakpoint(laptop) {
+            font-size: $font-size-5xl;
+        }
+
+        @include breakpoint(desktop) {
+            font-size: $font-size-6xl;
+        }
+    }
+}

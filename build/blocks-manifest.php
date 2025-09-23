@@ -64,6 +64,34 @@ return array(
 		'render' => 'file:./render.php',
 		'viewScript' => 'file:./view.js'
 	),
+	'image-w-text-overlay' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'skp-blocks/image-w-text-overlay',
+		'version' => '0.1.0',
+		'title' => 'Image with text overlay',
+		'category' => 'skp-blocks',
+		'icon' => 'smiley',
+		'description' => 'Example block scaffolded with Create Block tool.',
+		'example' => array(
+			
+		),
+		'supports' => array(
+			'html' => false,
+			'innerBlocks' => true
+		),
+		'attributes' => array(
+			'backgroundImage' => array(
+				'type' => 'string',
+				'default' => ''
+			)
+		),
+		'textdomain' => 'skp-theme',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'viewScript' => 'file:./view.js'
+	),
 	'project-description' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,

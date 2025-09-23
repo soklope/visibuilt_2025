@@ -10,7 +10,7 @@
     font-size: 3rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .skp-animated-text__value {
     font-size: 6rem;
   }

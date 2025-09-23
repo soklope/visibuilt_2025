@@ -28,7 +28,7 @@
 }
 .header {
   position: sticky;
-  z-index: 2;
+  z-index: 3;
   margin-bottom: 24px;
   background-color: #FEFFF1;
   top: -80px;
@@ -39,7 +39,7 @@
     padding: 0 16px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .header {
     top: -120px;
     margin-bottom: 32px;
@@ -71,7 +71,7 @@
   align-items: center;
   justify-content: space-between;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .header__inner {
     height: 120px;
   }
@@ -81,7 +81,7 @@
   flex-direction: column;
   gap: 4px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .header__burger {
     display: none;
   }
@@ -92,7 +92,7 @@
 .header__navigation {
   display: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .header__navigation {
     display: flex;
     gap: 40px;
@@ -126,7 +126,7 @@
   opacity: 1;
   visibility: visible;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .header .header__mega-menu-container--toggled {
     display: none;
   }
@@ -157,7 +157,7 @@
   font-size: 0.875rem;
   padding: 80px 0;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .footer {
     padding: 160px 16px;
     margin-top: 160px;
@@ -176,7 +176,7 @@
   flex-direction: column;
   gap: 16px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .footer__navigation {
     flex-direction: row;
     gap: 40px;
@@ -194,7 +194,7 @@
   flex-direction: column;
   gap: 16px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .footer__some {
     flex-direction: row;
     gap: 40px;
@@ -299,7 +299,7 @@ html {
     max-width: 720px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .page-container {
     max-width: 1200px;
   }
@@ -343,7 +343,7 @@ hr {
     flex-direction: row;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .page-heading {
     margin-bottom: 48px;
   }
@@ -398,7 +398,7 @@ h1,
     font-size: 4rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   h1,
   .heading-1 {
     font-size: 4rem;
@@ -421,7 +421,7 @@ h2,
     font-size: 2rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   h2,
   .heading-2 {
     font-size: 2.25rem;
@@ -444,7 +444,7 @@ h3,
     font-size: 1.75rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   h3,
   .heading-3 {
     font-size: 2rem;
@@ -461,7 +461,7 @@ h4,
     font-size: 1.5rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   h4,
   .heading-4 {
     font-size: 1.75rem;
@@ -478,7 +478,7 @@ h5,
     font-size: 1.25rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   h5,
   .heading-5 {
     font-size: 1.5rem;
@@ -495,16 +495,10 @@ h6,
     font-size: 1.125rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   h6,
   .heading-6 {
     font-size: 1.25rem;
-  }
-}
-
-@media (min-width: 768px) {
-  main {
-    padding: 0 16px;
   }
 }
 
@@ -524,7 +518,7 @@ a:hover {
     margin-bottom: 1rem; /* tablet ~16px */
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .skp-margin-xs {
     margin-bottom: 1.25rem; /* laptop ~20px */
   }
@@ -544,7 +538,7 @@ a:hover {
     margin-bottom: 1.5rem; /* tablet ~24px */
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .skp-margin-s {
     margin-bottom: 1.75rem; /* laptop ~28px */
   }
@@ -564,7 +558,7 @@ a:hover {
     margin-bottom: 2rem; /* tablet ~32px */
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .skp-margin-m {
     margin-bottom: 2.25rem; /* laptop ~36px */
   }
@@ -584,7 +578,7 @@ a:hover {
     margin-bottom: 2.5rem; /* tablet ~40px */
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .skp-margin-l {
     margin-bottom: 3rem; /* laptop ~48px */
   }
@@ -603,7 +597,7 @@ a:hover {
     min-height: calc(100dvh - 104px);
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .page-main--contact {
     min-height: calc(100dvh - 152px);
   }
@@ -643,7 +637,7 @@ a:hover {
     flex-direction: column;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .wp-block-columns {
     flex-direction: row;
     gap: 80px;
@@ -699,7 +693,7 @@ a:hover {
     height: 480px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .wp-block-image {
     height: 640px;
   }
@@ -717,6 +711,11 @@ a:hover {
   display: block;
 }
 
+.wp-block-button {
+  border: solid 1px #EE9A32;
+  border-radius: 50px;
+  display: flex;
+}
 .wp-block-button__link {
   font-weight: bold;
   display: flex;
@@ -726,8 +725,8 @@ a:hover {
   background: none;
   border-style: none !important;
   padding: 0;
-  margin-top: 24px !important;
   letter-spacing: 3px;
+  padding: 8px 24px;
 }
 .wp-block-button__link::before {
   content: "";
@@ -749,8 +748,8 @@ a:hover {
   background: none;
   border-style: none !important;
   padding: 0;
-  margin-top: 24px !important;
   letter-spacing: 3px;
+  padding: 8px 24px;
 }
 .is-style-outline .wp-block-button__link::before {
   content: "";
@@ -771,7 +770,7 @@ a:hover {
     height: 80px !important;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .wp-block-spacer {
     height: 120px !important;
   }
@@ -786,7 +785,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .wp-block-gallery {
     flex-wrap: nowrap;
   }
@@ -801,14 +800,14 @@ a:hover {
     flex: 1 1 calc(50% - 4px);
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .wp-block-gallery .wp-block-image {
     flex: 1 1 50%;
     transition: flex 1.5s ease, transform 1.5s ease;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .wp-block-gallery .wp-block-image:hover {
     flex: 2 1 100%;
   }
@@ -824,7 +823,7 @@ a:hover {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .wp-block-post-template {
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   }
@@ -892,7 +891,7 @@ a:hover {
     max-height: 640px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .single__hero img {
     max-height: 480px;
   }
@@ -916,7 +915,7 @@ a:hover {
 .single .wp-block-columns p {
   margin-bottom: 32px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .single .wp-block-columns {
     gap: 40px;
   }
