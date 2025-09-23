@@ -11,7 +11,7 @@
     gap: 24px;
   }
 }
-.skp-project-description .wp-block-button__link {
+.skp-project-description .wp-block-buttons {
   margin-top: unset !important;
 }
 

@@ -1,0 +1,1 @@
+{"version":3,"file":"image-w-text-overlay/index.css","mappings":";;;AAEA;EACI;EACA;AADJ,C","sources":["webpack://hero/./src/image-w-text-overlay/editor.scss"],"sourcesContent":["@use '../../assets/scss/global/variables' as *;\r\n\r\n.skp-image-w-text-overlay {\r\n    display: flex;\r\n    align-items: center;\r\n}"],"names":[],"sourceRoot":""}

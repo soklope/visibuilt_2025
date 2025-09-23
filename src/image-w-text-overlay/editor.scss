@@ -1,4 +1,6 @@
 @use '../../assets/scss/global/variables' as *;
 
 .skp-image-w-text-overlay {
+    display: flex;
+    align-items: center;
 }

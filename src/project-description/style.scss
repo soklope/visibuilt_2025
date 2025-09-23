@@ -12,8 +12,8 @@
     @include breakpoint(desktop) {
         gap: 24px;
     }
-
-    .wp-block-button__link {
+    
+    .wp-block-buttons {
         margin-top: unset !important;
     }
 }
