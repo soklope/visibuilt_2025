@@ -1,0 +1,22 @@
+@use '../../assets/scss/global/breakpoints' as *;
+@use '../../assets/scss/global/variables' as *;
+
+.skp-animated-text {
+
+    &__value {
+        font-size: $font-size-5xl;
+        font-weight: bold;
+    
+        @include breakpoint(tablet) {
+            font-size: $font-size-7xl;
+        }
+    
+        @include breakpoint(laptop) {
+            font-size: $font-size-8xl;
+        }
+    
+        @include breakpoint(desktop) {
+            font-size: $font-size-9xl;
+        }
+    }
+}

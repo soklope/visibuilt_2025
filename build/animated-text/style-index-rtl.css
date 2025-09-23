@@ -1,0 +1,22 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/animated-text/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+.skp-animated-text__value {
+  font-size: 3rem;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .skp-animated-text__value {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .skp-animated-text__value {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 1537px) {
+  .skp-animated-text__value {
+    font-size: 8rem;
+  }
+}

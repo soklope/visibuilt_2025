@@ -8,7 +8,7 @@
         <?php if ( $parent_id ) : ?>
 
             <div class="page-heading page-container">
-                <h1 class="page-heading__title">
+                <h1 class="page-heading__title page-heading__title--parent">
                     <?php echo get_the_title( $parent_id ); ?>
                 </h1>
                 <hr class="page-heading__hr">

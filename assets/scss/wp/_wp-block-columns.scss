@@ -12,5 +12,11 @@
 
     @include breakpoint(laptop) {
         flex-direction: row;
+        gap: 80px;
+    }
+
+    @include breakpoint(desktop) {
+        flex-direction: row;
+        gap: 120px;
     }
 }

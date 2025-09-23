@@ -331,14 +331,16 @@ hr {
   margin-bottom: 24px;
   text-transform: lowercase;
   white-space: nowrap;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 @media (min-width: 768px) {
   .page-heading {
+    gap: 40px;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    gap: 40px;
   }
 }
 @media (min-width: 1024px) {
@@ -354,14 +356,12 @@ hr {
 .page-heading__title--contact {
   color: #FEFFF1;
 }
-.page-heading__hr {
+.page-heading__title--parent {
   display: none;
 }
-@media (min-width: 768px) {
-  .page-heading__hr {
-    display: block;
-    flex: 1;
-  }
+.page-heading__hr {
+  display: block;
+  flex: 1;
 }
 .page-heading__hr--contact {
   background-color: #EE9A32;
@@ -646,6 +646,13 @@ a:hover {
 @media (min-width: 1024px) {
   .wp-block-columns {
     flex-direction: row;
+    gap: 80px;
+  }
+}
+@media (min-width: 1537px) {
+  .wp-block-columns {
+    flex-direction: row;
+    gap: 120px;
   }
 }
 
