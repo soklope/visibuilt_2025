@@ -8,7 +8,7 @@
     margin-bottom: 24px;
     background-color: $off-white;
     top: -80px;
-    transition: .3s;
+    transition: $transition;
     
     @include breakpoint(tablet) {
         padding: 0 16px;
@@ -33,11 +33,11 @@
     
     a {
         font-weight: 500;
-        transition: .2s;
+        transition: $transition;
         color: $black;
 
         &:hover {
-            transition: .2s;
+            transition: $transition;
             color: $yellow;
         }
     }

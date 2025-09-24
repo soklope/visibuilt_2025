@@ -58,11 +58,11 @@
 }
 .header a {
   font-weight: 500;
-  transition: 0.2s;
+  transition: 0.3s;
   color: #000000;
 }
 .header a:hover {
-  transition: 0.2s;
+  transition: 0.3s;
   color: #EE9A32;
 }
 .header__inner {
@@ -505,9 +505,6 @@ h6,
 a {
   color: #EE9A32;
 }
-a:hover {
-  color: #000000;
-}
 
 /* Extra Small Margin */
 .skp-margin-xs {
@@ -629,6 +626,24 @@ a:hover {
   object-fit: cover;
 }
 
+.page-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FEFFF1;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.page-transition.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .wp-block-columns {
   gap: 40px;
 }
@@ -681,14 +696,14 @@ a:hover {
   font-size: 2.25rem;
   font-weight: bold;
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity 0.3s ease;
   pointer-events: none;
 }
 .wp-block-image a:hover::after {
   opacity: 1;
 }
 .wp-block-image:hover img {
-  transition: 1s ease;
+  transition: 0.3s ease;
   scale: 1.05;
 }
 @media (min-width: 768px) {
@@ -707,7 +722,7 @@ a:hover {
   }
 }
 .wp-block-image img {
-  transition: 1s ease;
+  transition: 0.3s ease;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -715,9 +730,16 @@ a:hover {
 }
 
 .wp-block-button {
+  transition: 0.3s;
   border: solid 1px #EE9A32;
   border-radius: 50px;
   display: flex;
+}
+@media (min-width: 1240px) {
+  .wp-block-button:hover {
+    scale: 1.05;
+    transition: 0.3s;
+  }
 }
 .wp-block-button__link {
   font-weight: bold;
@@ -742,6 +764,15 @@ a:hover {
   color: #EE9A32;
 }
 
+.is-style-outline .wp-block-button {
+  transition: 0.3s;
+}
+@media (min-width: 1240px) {
+  .is-style-outline .wp-block-button:hover {
+    scale: 1.05;
+    transition: 0.3s;
+  }
+}
 .is-style-outline .wp-block-button__link {
   font-weight: bold;
   display: flex;
@@ -853,12 +884,12 @@ a:hover {
 }
 .wp-block-post-template img {
   aspect-ratio: 1/1;
-  transition: 1s ease;
+  transition: 0.3s ease;
   object-fit: cover;
   display: block;
 }
 .wp-block-post-template img:hover {
-  transition: 1s ease;
+  transition: 0.3s ease;
   scale: 1.05;
 }
 .wp-block-post-template .wp-block-post-excerpt__excerpt {

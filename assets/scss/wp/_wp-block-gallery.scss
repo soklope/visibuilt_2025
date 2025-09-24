@@ -1,4 +1,5 @@
 @use '../global/breakpoints' as *;
+@use '../global/variables' as *;
 
 .wp-block-gallery {
     display: flex;
@@ -19,7 +20,7 @@
 
     @include breakpoint(laptop) {
         flex: 1 1 50%;
-        transition: flex 1.5s ease, transform 1.5s ease;
+        transition: flex $transition-slow ease, transform $transition-slow ease;
     }
 }
 

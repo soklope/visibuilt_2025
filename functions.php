@@ -35,13 +35,23 @@ add_action('admin_enqueue_scripts', 'my_admin_styles');
 
 
 function script_setup() {
+    wp_enqueue_script(
+        'main-js',
+        get_template_directory_uri() . '/main.js',
+        array(),
+        filemtime(get_template_directory() . '/main.js'),
+        true
+    );
+
+    foreach (glob(get_template_directory() . '/assets/js/*.js') as $file) {
         wp_enqueue_script(
-            'main-js',
-            get_template_directory_uri() . '/main.js',
-            array(),
-            filemtime(get_template_directory() . '/main.js'),
-            true
+            basename($file, '.js'), 
+            get_template_directory_uri() . '/assets/js/' . basename($file), // URL
+            array(), 
+            filemtime($file), 
+            true 
         );
+    }
 }
 add_action('wp_enqueue_scripts', 'script_setup');
 

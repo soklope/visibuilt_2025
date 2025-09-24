@@ -15,6 +15,7 @@
 @use './global/margin' as *;
 @use './global/page' as *;
 @use './global/some' as *;
+@use './global/page-transition' as *;
 
 @use './wp/editor.scss' as *;
 @use './wp/wp-block-columns' as *;

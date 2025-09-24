@@ -10,6 +10,7 @@
     </head>
     
     <body <?php body_class( $is_contact_page ? 'body body--contact' : 'body' ); ?>>
+    <div class="page-transition"></div>
 
     <header class="<?= $is_contact_page ? 'header header--contact header--show' : 'header header--show' ?>">
         <div class="page-container header__inner">

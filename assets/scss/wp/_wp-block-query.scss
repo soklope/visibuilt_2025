@@ -43,12 +43,12 @@
 
     img {
         aspect-ratio: 1/1;
-        transition: 1s ease;
+        transition: $transition ease;
         object-fit: cover;
         display: block;
 
         &:hover  {
-            transition: 1s ease;
+            transition: $transition ease;
             scale: 1.05;
         }
     }
