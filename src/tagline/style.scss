@@ -4,6 +4,7 @@
 .skp-tagline {
     display: flex;
     font-weight: bold;
+    gap: 16px;
     color: $yellow;
     letter-spacing: $letter-spacing;
     font-size: $font-size-xs;
@@ -21,11 +22,8 @@
         font-size: $font-size-md;
     }
 
-    &::before {
-        content: "";
+    &__image {
         height: 40px;
         width: 40px;
-        margin-right: 16px;
-        background: url('../../assets/icons/trihex/olive/1.png') center / contain no-repeat;
     }
 }

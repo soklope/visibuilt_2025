@@ -1,69 +1,49 @@
 @use 'breakpoints' as *;
 
-/* Extra Small Margin */
-.skp-margin-xs { 
-    margin-bottom: 0.75rem; /* mobile ~12px */
-
-    @include breakpoint(tablet) {
-        margin-bottom: 1rem; /* tablet ~16px */
-    }
-
-    @include breakpoint(laptop) {
-        margin-bottom: 1.25rem; /* laptop ~20px */
-    }
-
-    @include breakpoint(desktop) {
-        margin-bottom: 1.5rem; /* desktop ~24px */
-    }
-}
-
-/* Small Margin */
 .skp-margin-s { 
-    margin-bottom: 1rem; /* mobile ~16px */
+    margin-bottom: 1.875rem; /* mobile ~30px */
 
     @include breakpoint(tablet) {
-        margin-bottom: 1.5rem; /* tablet ~24px */
+        margin-bottom: 2.8rem; /* tablet ~45px */
     }
 
     @include breakpoint(laptop) {
-        margin-bottom: 1.75rem; /* laptop ~28px */
+        margin-bottom: 3.25rem; /* laptop ~52px */
     }
 
     @include breakpoint(desktop) {
-        margin-bottom: 2rem; /* desktop ~32px */
+        margin-bottom: 3.75rem; /* desktop 60px */
     }
 }
 
-/* Medium Margin */
 .skp-margin-m { 
-    margin-bottom: 1.5rem; /* mobile ~24px */
+    margin-bottom: 3rem; /* mobile ~48px */
 
     @include breakpoint(tablet) {
-        margin-bottom: 2rem; /* tablet ~32px */
+        margin-bottom: 4rem; /* tablet ~64px */
     }
 
     @include breakpoint(laptop) {
-        margin-bottom: 2.25rem; /* laptop ~36px */
+        margin-bottom: 4.5rem; /* laptop ~72px */
     }
 
     @include breakpoint(desktop) {
-        margin-bottom: 2.5rem; /* desktop ~40px */
+        margin-bottom: 5rem; /* desktop 80px */
     }
 }
 
-/* Large Margin */
 .skp-margin-l { 
-    margin-bottom: 2rem; /* mobile ~32px */
+    margin-bottom: 5.75rem; /* mobile ~92px */
 
     @include breakpoint(tablet) {
-        margin-bottom: 2.5rem; /* tablet ~40px */
+        margin-bottom: 7.15rem; /* tablet ~114px */
     }
 
     @include breakpoint(laptop) {
-        margin-bottom: 3rem; /* laptop ~48px */
+        margin-bottom: 8.6rem; /* laptop ~137px */
     }
 
     @include breakpoint(desktop) {
-        margin-bottom: 3.5rem; /* desktop ~56px */
+        margin-bottom: 10rem; /* desktop 160px */
     }
 }

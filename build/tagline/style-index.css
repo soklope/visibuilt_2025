@@ -1,1 +1,33 @@
-.skp-tagline{color:#ee9a32;display:flex;font-size:.75rem;font-weight:700;letter-spacing:3px}@media(min-width:768px){.skp-tagline{align-items:center;font-size:.75rem}}@media(min-width:1240px){.skp-tagline{font-size:.875rem}}@media(min-width:1537px){.skp-tagline{font-size:1rem}}.skp-tagline:before{background:url(../images/1.dee39c2d.png) 50%/contain no-repeat;content:"";height:40px;margin-right:16px;width:40px}
+/*!***********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/tagline/style.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************/
+.skp-tagline {
+  display: flex;
+  font-weight: bold;
+  gap: 16px;
+  color: #EE9A32;
+  letter-spacing: 3px;
+  font-size: 0.75rem;
+}
+@media (min-width: 768px) {
+  .skp-tagline {
+    font-size: 0.75rem;
+    align-items: center;
+  }
+}
+@media (min-width: 1240px) {
+  .skp-tagline {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 1537px) {
+  .skp-tagline {
+    font-size: 1rem;
+  }
+}
+.skp-tagline__image {
+  height: 40px;
+  width: 40px;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

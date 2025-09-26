@@ -1,1 +1,36 @@
-document.addEventListener("DOMContentLoaded",()=>{const t=document.querySelectorAll(".skp-animated-text__span"),e=new IntersectionObserver((t,e)=>{t.forEach(t=>{if(t.isIntersecting){const n=t.target,o=n.textContent;n.textContent="",o.split("").forEach((t,e)=>{const o=document.createElement("span");o.textContent=t,o.classList.add("letter"),o.style.transition="color 0.3s",o.style.transitionDelay=.1*e+"s",n.appendChild(o)}),setTimeout(()=>{n.querySelectorAll(".letter").forEach(t=>{t.style.color="#EE9A32"})},50),e.unobserve(n)}})},{threshold:.2});t.forEach(t=>e.observe(t))});
+/******/ (() => { // webpackBootstrap
+/*!***********************************!*\
+  !*** ./src/animated-text/view.js ***!
+  \***********************************/
+document.addEventListener("DOMContentLoaded", () => {
+  const animateSpans = document.querySelectorAll(".skp-animated-text__span");
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const span = entry.target;
+        const text = span.textContent;
+        span.textContent = "";
+        text.split("").forEach((char, i) => {
+          const letterSpan = document.createElement("span");
+          letterSpan.textContent = char;
+          letterSpan.classList.add("letter");
+          letterSpan.style.transition = "color 0.3s";
+          letterSpan.style.transitionDelay = `${i * 0.1}s`;
+          span.appendChild(letterSpan);
+        });
+        setTimeout(() => {
+          span.querySelectorAll(".letter").forEach(l => {
+            l.style.color = "#EE9A32";
+          });
+        }, 50);
+        obs.unobserve(span);
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+  animateSpans.forEach(span => observer.observe(span));
+});
+/******/ })()
+;
+//# sourceMappingURL=view.js.map

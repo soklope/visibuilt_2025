@@ -61,7 +61,6 @@ return array(
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
-		'render' => 'file:./render.php',
 		'viewScript' => 'file:./view.js'
 	),
 	'image-w-text-overlay' => array(
@@ -133,6 +132,41 @@ return array(
 			'taglineText' => array(
 				'type' => 'string',
 				'default' => 'Tagline text here'
+			),
+			'imageUrl' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'imageId' => array(
+				'type' => 'number'
+			)
+		),
+		'textdomain' => 'skp-theme',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'viewScript' => 'file:./view.js'
+	),
+	'value-info' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'skp-blocks/value-info',
+		'version' => '0.1.0',
+		'title' => 'Value info',
+		'category' => 'skp-blocks',
+		'icon' => 'smiley',
+		'description' => 'Example block scaffolded with Create Block tool.',
+		'example' => array(
+			
+		),
+		'supports' => array(
+			'html' => false,
+			'innerBlocks' => true
+		),
+		'attributes' => array(
+			'align' => array(
+				'type' => 'string',
+				'default' => 'left'
 			)
 		),
 		'textdomain' => 'skp-theme',

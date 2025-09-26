@@ -1,0 +1,40 @@
+@use '../../assets/scss/global/breakpoints' as *;
+@use '../../assets/scss/global/variables' as *;
+
+.skp-value-info {
+
+    &--left {
+        margin-right: auto;
+    }
+
+    &--right {
+        margin-left: auto;
+    }
+
+    @include breakpoint(tablet) {
+        width: 75%;
+    }
+
+    @include breakpoint(laptop) {
+        width: 60%;
+    }
+
+    @include breakpoint(desktop) {
+
+    }
+
+    p {
+        font-size: $font-size-md;
+
+        @include breakpoint(tablet) {
+            font-size: $font-size-lg;
+        }
+
+        @include breakpoint(laptop) {
+        }
+
+        @include breakpoint(desktop) {
+            font-size: $font-size-xl;
+        }
+    }
+}

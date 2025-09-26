@@ -15,6 +15,13 @@
     "taglineText": {
       "type": "string",
       "default": "Tagline text here"
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageId": {
+      "type": "number"
     }
   },
   "textdomain": "skp-theme",

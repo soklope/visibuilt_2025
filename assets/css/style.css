@@ -289,6 +289,10 @@ html {
   scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 .page-container {
   margin: 0 auto;
   width: 90%;
@@ -511,83 +515,60 @@ a {
   color: #EE9A32;
 }
 
-/* Extra Small Margin */
-.skp-margin-xs {
-  margin-bottom: 0.75rem; /* mobile ~12px */
-}
-@media (min-width: 768px) {
-  .skp-margin-xs {
-    margin-bottom: 1rem; /* tablet ~16px */
-  }
-}
-@media (min-width: 1240px) {
-  .skp-margin-xs {
-    margin-bottom: 1.25rem; /* laptop ~20px */
-  }
-}
-@media (min-width: 1537px) {
-  .skp-margin-xs {
-    margin-bottom: 1.5rem; /* desktop ~24px */
-  }
-}
-
-/* Small Margin */
 .skp-margin-s {
-  margin-bottom: 1rem; /* mobile ~16px */
+  margin-bottom: 1.875rem; /* mobile ~30px */
 }
 @media (min-width: 768px) {
   .skp-margin-s {
-    margin-bottom: 1.5rem; /* tablet ~24px */
+    margin-bottom: 2.8rem; /* tablet ~45px */
   }
 }
 @media (min-width: 1240px) {
   .skp-margin-s {
-    margin-bottom: 1.75rem; /* laptop ~28px */
+    margin-bottom: 3.25rem; /* laptop ~52px */
   }
 }
 @media (min-width: 1537px) {
   .skp-margin-s {
-    margin-bottom: 2rem; /* desktop ~32px */
+    margin-bottom: 3.75rem; /* desktop 60px */
   }
 }
 
-/* Medium Margin */
 .skp-margin-m {
-  margin-bottom: 1.5rem; /* mobile ~24px */
+  margin-bottom: 3rem; /* mobile ~48px */
 }
 @media (min-width: 768px) {
   .skp-margin-m {
-    margin-bottom: 2rem; /* tablet ~32px */
+    margin-bottom: 4rem; /* tablet ~64px */
   }
 }
 @media (min-width: 1240px) {
   .skp-margin-m {
-    margin-bottom: 2.25rem; /* laptop ~36px */
+    margin-bottom: 4.5rem; /* laptop ~72px */
   }
 }
 @media (min-width: 1537px) {
   .skp-margin-m {
-    margin-bottom: 2.5rem; /* desktop ~40px */
+    margin-bottom: 5rem; /* desktop 80px */
   }
 }
 
-/* Large Margin */
 .skp-margin-l {
-  margin-bottom: 2rem; /* mobile ~32px */
+  margin-bottom: 5.75rem; /* mobile ~92px */
 }
 @media (min-width: 768px) {
   .skp-margin-l {
-    margin-bottom: 2.5rem; /* tablet ~40px */
+    margin-bottom: 7.15rem; /* tablet ~114px */
   }
 }
 @media (min-width: 1240px) {
   .skp-margin-l {
-    margin-bottom: 3rem; /* laptop ~48px */
+    margin-bottom: 8.6rem; /* laptop ~137px */
   }
 }
 @media (min-width: 1537px) {
   .skp-margin-l {
-    margin-bottom: 3.5rem; /* desktop ~56px */
+    margin-bottom: 10rem; /* desktop 160px */
   }
 }
 

@@ -1,9 +1,8 @@
 <?php
     $heading = isset( $attributes['heading'] ) ? $attributes['heading'] : '';
     $content = isset( $attributes['content'] ) ? $attributes['content'] : '';
-    $margin  = isset( $attributes['marginSize'] ) ? $attributes['marginSize'] : 'm';
 
-    $classes = 'skp-contact-info page-container skp-margin-' . esc_attr( $margin );
+    $classes = 'skp-contact-info page-container';
     $wrapper_attributes = get_block_wrapper_attributes( [ 'class' => $classes ] );
 ?>
 

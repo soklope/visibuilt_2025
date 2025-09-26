@@ -219,3 +219,26 @@ function mytheme_set_default_image_aspect_ratio() {
     );
 }
 add_action( 'enqueue_block_editor_assets', 'mytheme_set_default_image_aspect_ratio' );
+
+
+
+
+
+function mytheme_editor_scripts() {
+    wp_enqueue_script(
+        'mytheme-block-margin-control',
+        get_template_directory_uri() . '/assets/js/block-margin-control.js',
+        array(
+            'wp-blocks',       // for registerBlockType
+            'wp-element',      // for createElement, Fragment
+            'wp-components',   // for ToolbarGroup, DropdownMenu
+            'wp-block-editor', // for BlockControls
+            'wp-compose',      // for createHigherOrderComponent
+            'wp-hooks'         // for addFilter
+        ),
+        filemtime( get_template_directory() . '/assets/js/block-margin-control.js' ),
+        true
+    );
+}
+add_action( 'enqueue_block_editor_assets', 'mytheme_editor_scripts' );
+
