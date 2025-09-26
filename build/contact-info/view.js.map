@@ -1,1 +1,0 @@
-{"version":3,"file":"contact-info/view.js","mappings":";;;;AAAAA,OAAO,CAACC,GAAG,CAAE,2CAA4C,CAAC,C","sources":["webpack://hero/./src/contact-info/view.js"],"sourcesContent":["console.log( 'Hello World! (from skp-blocks-hero block)' );\n\n"],"names":["console","log"],"sourceRoot":""}

@@ -359,6 +359,11 @@ hr {
 .page-heading__title--parent {
   display: none;
 }
+@media (min-width: 768px) {
+  .page-heading__title--parent {
+    display: block;
+  }
+}
 .page-heading__hr {
   display: block;
   flex: 1;

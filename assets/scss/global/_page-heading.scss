@@ -33,6 +33,10 @@
 
         &--parent {
             display: none;
+
+            @include breakpoint(tablet) {
+                display: block;
+            }
         }
     }
 
