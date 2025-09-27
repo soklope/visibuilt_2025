@@ -1,10 +1,10 @@
 import { __ } from '@wordpress/i18n';
 import { useBlockProps, RichText, MediaUpload, MediaUploadCheck, InspectorControls } from '@wordpress/block-editor';
-import { PanelBody, Button } from '@wordpress/components';
+import { PanelBody, Button, SelectControl } from '@wordpress/components';
 import './editor.scss';
 
 export default function Edit({ attributes, setAttributes }) {
-    const { taglineText, imageUrl, imageId } = attributes;
+    const { taglineText, imageUrl, imageId, align, layout } = attributes;
 
     const onSelectImage = (media) => {
         setAttributes({
@@ -43,9 +43,32 @@ export default function Edit({ attributes, setAttributes }) {
                         />
                     )}
                 </PanelBody>
+
+                <PanelBody title={ __( 'Layout', 'skp-theme' ) } initialOpen={ true }>
+					<SelectControl
+						label={ __( 'Choose alignement', 'skp-theme' ) }
+						value={ align }
+						options={ [
+							{ label: __( 'left', 'skp-theme' ), value: 'left' },
+							{ label: __( 'right', 'skp-theme' ), value: 'right' },
+							{ label: __( 'center', 'skp-theme' ), value: 'center' },
+						] }
+						onChange={ ( value ) => setAttributes( { align: value } ) }
+					/>
+
+                    <SelectControl
+						label={ __( 'Choose layout', 'skp-theme' ) }
+						value={ layout }
+						options={ [
+							{ label: __( 'row', 'skp-theme' ), value: 'row' },
+							{ label: __( 'column', 'skp-theme' ), value: 'column' },
+						] }
+						onChange={ ( value ) => setAttributes( { layout: value } ) }
+					/>
+				</PanelBody>
             </InspectorControls>
 
-            <div { ...useBlockProps({ className: 'skp-tagline' }) }>
+            <div { ...useBlockProps({ className: `skp-tagline skp-tagline--${align} skp-tagline--${layout}`  }) }>
                 { imageUrl && (
                     <img className="skp-tagline__image" src={imageUrl} alt={__('Tagline image', 'skp-theme')} />
                 )}

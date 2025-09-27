@@ -5,3 +5,6 @@
   display: flex;
   align-items: center;
 }
+.skp-image-w-text-overlay .block-editor-inner-blocks {
+  width: 100%;
+}

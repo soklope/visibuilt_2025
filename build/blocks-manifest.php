@@ -139,6 +139,71 @@ return array(
 			),
 			'imageId' => array(
 				'type' => 'number'
+			),
+			'align' => array(
+				'type' => 'string',
+				'default' => 'left'
+			),
+			'layout' => array(
+				'type' => 'string',
+				'default' => 'row'
+			)
+		),
+		'textdomain' => 'skp-theme',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'viewScript' => 'file:./view.js'
+	),
+	'team-grid' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'skp-blocks/team-grid',
+		'version' => '0.1.0',
+		'title' => 'Team grid',
+		'category' => 'skp-blocks',
+		'icon' => 'smiley',
+		'description' => 'Example block scaffolded with Create Block tool.',
+		'example' => array(
+			
+		),
+		'supports' => array(
+			'html' => false,
+			'innerBlocks' => true
+		),
+		'textdomain' => 'skp-theme',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'viewScript' => 'file:./view.js'
+	),
+	'team-member' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'skp-blocks/team-member',
+		'version' => '0.1.0',
+		'title' => 'Team member',
+		'category' => 'skp-blocks',
+		'icon' => 'smiley',
+		'description' => 'Example block scaffolded with Create Block tool.',
+		'example' => array(
+			
+		),
+		'supports' => array(
+			'html' => false,
+			'innerBlocks' => true
+		),
+		'attributes' => array(
+			'imageUrl' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'imageId' => array(
+				'type' => 'number'
+			),
+			'info' => array(
+				'type' => 'string',
+				'default' => 'team member info here'
 			)
 		),
 		'textdomain' => 'skp-theme',

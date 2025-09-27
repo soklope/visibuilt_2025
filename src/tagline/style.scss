@@ -3,15 +3,16 @@
 
 .skp-tagline {
     display: flex;
+    width: fit-content;
     font-weight: bold;
     gap: 16px;
     color: $yellow;
     letter-spacing: $letter-spacing;
     font-size: $font-size-xs;
+    align-items: center; 
 
     @include breakpoint(tablet) {
         font-size: $font-size-xs;
-        align-items: center; 
     }
 
     @include breakpoint(laptop) {
@@ -20,6 +21,26 @@
 
     @include breakpoint(desktop) {
         font-size: $font-size-md;
+    }
+
+    &--column {
+        flex-direction: column;
+    }
+
+    &--row {
+        flex-direction: row;
+    }
+
+    &--left {
+        margin-right: auto;
+    }
+
+    &--right {
+        margin-left: auto;
+    }
+
+    &--center {
+        margin: 0 auto;
     }
 
     &__image {

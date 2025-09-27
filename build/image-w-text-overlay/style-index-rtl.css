@@ -98,10 +98,6 @@
     margin-bottom: -24px;
   }
 }
-.skp-image-w-text-overlay .skp-tagline {
-  flex-direction: column;
-  align-items: center;
-}
 .skp-image-w-text-overlay .skp-tagline p {
   font-size: 1rem;
   color: #EE9A32;
@@ -119,7 +115,6 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #FEFFF1;
-  text-align: center;
 }
 @media (min-width: 768px) {
   .skp-image-w-text-overlay p {

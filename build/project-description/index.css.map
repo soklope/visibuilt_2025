@@ -1,0 +1,1 @@
+{"version":3,"file":"project-description/index.css","mappings":";;;AAGI;EACI;AAFR,C","sources":["webpack://hero/./src/project-description/editor.scss"],"sourcesContent":["@use '../../assets/scss/global/variables' as *;\r\n\r\n.skp-project-description {\r\n    .skp-tagline {\r\n        width: 100%;\r\n    }\r\n}"],"names":[],"sourceRoot":""}

@@ -22,6 +22,14 @@
         },
         "imageId": {
             "type": "number"
+        },
+        "align": {
+            "type": "string",
+            "default": "left"
+        },
+        "layout": {
+            "type": "string",
+            "default": "row"
         }
     },
     "textdomain": "skp-theme",

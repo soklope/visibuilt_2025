@@ -3,16 +3,18 @@
   \***********************************************************************************************************************************************************************************************************************************************/
 .skp-tagline {
   display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
   font-weight: bold;
   gap: 16px;
   color: #EE9A32;
   letter-spacing: 3px;
   font-size: 0.75rem;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .skp-tagline {
     font-size: 0.75rem;
-    align-items: center;
   }
 }
 @media (min-width: 1240px) {
@@ -24,6 +26,21 @@
   .skp-tagline {
     font-size: 1rem;
   }
+}
+.skp-tagline--column {
+  flex-direction: column;
+}
+.skp-tagline--row {
+  flex-direction: row;
+}
+.skp-tagline--left {
+  margin-left: auto;
+}
+.skp-tagline--right {
+  margin-right: auto;
+}
+.skp-tagline--center {
+  margin: 0 auto;
 }
 .skp-tagline__image {
   height: 40px;

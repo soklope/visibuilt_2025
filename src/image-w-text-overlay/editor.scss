@@ -3,4 +3,8 @@
 .skp-image-w-text-overlay {
     display: flex;
     align-items: center;
+
+    .block-editor-inner-blocks {
+        width: 100%;
+    }
 }

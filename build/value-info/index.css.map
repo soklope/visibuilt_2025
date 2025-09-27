@@ -1,0 +1,1 @@
+{"version":3,"file":"value-info/index.css","mappings":";;;AAGI;EACI;AAFR,C","sources":["webpack://hero/./src/value-info/editor.scss"],"sourcesContent":["@use '../../assets/scss/global/variables' as *;\r\n\r\n.skp-value-info {\r\n    .skp-tagline {\r\n        width: 100%;\r\n    }\r\n}"],"names":[],"sourceRoot":""}
