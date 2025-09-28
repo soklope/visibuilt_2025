@@ -15,6 +15,10 @@
         "text": {
             "type": "string",
             "default": "text here..."
+        },
+        "textAlign": {
+            "type": "string",
+            "default": "left"
         }
     },
     "textdomain": "skp-theme",

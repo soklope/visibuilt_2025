@@ -4,7 +4,7 @@
 
 
 .wp-block-columns {
-    gap: 40px;
+    gap: 8px;
 
     @include breakpoint(tablet) {
         flex-direction: column;
@@ -12,15 +12,9 @@
 
     @include breakpoint(laptop) {
         flex-direction: row;
-        gap: 80px;
     }
 
     @include breakpoint(desktop) {
         flex-direction: row;
-        gap: 120px;
-    }
-
-    .wp-block-buttons {
-        margin-top: 24px;
     }
 }

@@ -4,6 +4,7 @@
 .skp-team-member {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 
     @include breakpoint(tablet) {
     }
@@ -15,8 +16,7 @@
     }
 
     &__image {
-        width: 100%;
-        height: 100%;
+        height: 400px;
         max-height: 480px;
         object-fit: cover;
         object-position: top;

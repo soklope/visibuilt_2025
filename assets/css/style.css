@@ -152,7 +152,6 @@
 }
 
 .footer {
-  margin-top: 80px;
   background-color: #FEFFF1;
   font-size: 0.875rem;
   padding: 80px 0;
@@ -160,7 +159,6 @@
 @media (min-width: 1240px) {
   .footer {
     padding: 160px 16px;
-    margin-top: 160px;
   }
 }
 .footer--contact {
@@ -291,6 +289,10 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+}
+
+p {
+  line-height: 130%;
 }
 
 .page-container {
@@ -515,22 +517,26 @@ a {
   color: #EE9A32;
 }
 
+.skp-margin-xs {
+  margin-bottom: 1rem; /* mobile ~16px */
+}
+
 .skp-margin-s {
   margin-bottom: 1.875rem; /* mobile ~30px */
 }
 @media (min-width: 768px) {
   .skp-margin-s {
-    margin-bottom: 2.8rem; /* tablet ~45px */
+    margin-bottom: 2rem; /* tablet ~45px */
   }
 }
 @media (min-width: 1240px) {
   .skp-margin-s {
-    margin-bottom: 3.25rem; /* laptop ~52px */
+    margin-bottom: 2.25rem; /* laptop ~52px */
   }
 }
 @media (min-width: 1537px) {
   .skp-margin-s {
-    margin-bottom: 3.75rem; /* desktop 60px */
+    margin-bottom: 2.5rem; /* desktop 60px */
   }
 }
 
@@ -630,8 +636,13 @@ a {
   pointer-events: none;
 }
 
+.components-dropdown-menu {
+  display: flex;
+  align-items: center;
+}
+
 .wp-block-columns {
-  gap: 40px;
+  gap: 8px;
 }
 @media (min-width: 768px) {
   .wp-block-columns {
@@ -641,17 +652,12 @@ a {
 @media (min-width: 1240px) {
   .wp-block-columns {
     flex-direction: row;
-    gap: 80px;
   }
 }
 @media (min-width: 1537px) {
   .wp-block-columns {
     flex-direction: row;
-    gap: 120px;
   }
-}
-.wp-block-columns .wp-block-buttons {
-  margin-top: 24px;
 }
 
 .wp-block-image {
@@ -716,10 +722,10 @@ a {
 }
 
 .wp-block-button {
-  transition: 0.3s;
   border: solid 1px #EE9A32;
   border-radius: 50px;
   display: flex;
+  transition: 0.3s;
 }
 @media (min-width: 1240px) {
   .wp-block-button:hover {
@@ -893,6 +899,44 @@ a {
   width: 24px;
   margin-right: 16px;
   background: url("../icons/flower/olive/2.png") center/contain no-repeat;
+}
+
+.has-medium-font-size {
+  font-size: 1rem !important;
+}
+@media (min-width: 768px) {
+  .has-medium-font-size {
+    font-size: 1.125rem !important;
+  }
+}
+@media (min-width: 1240px) {
+  .has-medium-font-size {
+    font-size: 1.25rem !important;
+  }
+}
+@media (min-width: 1537px) {
+  .has-medium-font-size {
+    font-size: 1.5rem !important;
+  }
+}
+
+.has-large-font-size {
+  font-size: 1.125rem !important;
+}
+@media (min-width: 768px) {
+  .has-large-font-size {
+    font-size: 1.25rem !important;
+  }
+}
+@media (min-width: 1240px) {
+  .has-large-font-size {
+    font-size: 1.875rem !important;
+  }
+}
+@media (min-width: 1537px) {
+  .has-large-font-size {
+    font-size: 2.25rem !important;
+  }
 }
 
 .single__title {

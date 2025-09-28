@@ -20,6 +20,10 @@ return array(
 			'text' => array(
 				'type' => 'string',
 				'default' => 'text here...'
+			),
+			'textAlign' => array(
+				'type' => 'string',
+				'default' => 'left'
 			)
 		),
 		'textdomain' => 'skp-theme',

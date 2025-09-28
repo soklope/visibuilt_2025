@@ -38,6 +38,12 @@
                                     icon: bottomMargin === '' ? 'yes' : '', 
                                     onClick: function() { setAttributes( { bottomMargin: '' } ); } 
                                 },
+                                                                { 
+                                title: 'X-Small', 
+                                    isActive: bottomMargin === 'skp-margin-xs', 
+                                    icon: bottomMargin === 'skp-margin-xs' ? 'yes' : '', 
+                                    onClick: function() { setAttributes( { bottomMargin: 'skp-margin-xs' } ); } 
+                                },
                                 { 
                                     title: 'Small', 
                                     isActive: bottomMargin === 'skp-margin-s', 

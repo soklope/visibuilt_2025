@@ -1,0 +1,35 @@
+@use '../global/breakpoints' as *;
+@use '../global/variables' as *;
+@use '../global/fonts' as *;
+
+.has-medium-font-size {
+    font-size: $font-size-md !important;
+    
+    @include breakpoint(tablet) {
+        font-size: $font-size-lg !important;
+    }
+    
+    @include breakpoint(laptop) {
+        font-size: $font-size-xl !important;
+    }
+
+    @include breakpoint(desktop) {
+        font-size: $font-size-2xl !important;
+    }
+}
+
+.has-large-font-size {
+    font-size: $font-size-lg !important;
+    
+    @include breakpoint(tablet) {
+        font-size: $font-size-xl !important;
+    }
+    
+    @include breakpoint(laptop) {
+        font-size: $font-size-3xl !important;
+    }
+
+    @include breakpoint(desktop) {
+        font-size: $font-size-4xl !important;
+    }
+}

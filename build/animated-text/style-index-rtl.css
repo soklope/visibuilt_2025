@@ -4,6 +4,7 @@
 .skp-animated-text__value {
   font-size: 3rem;
   font-weight: bold;
+  line-height: 100%;
 }
 @media (min-width: 768px) {
   .skp-animated-text__value {

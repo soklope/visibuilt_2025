@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
           letterSpan.textContent = char;
           letterSpan.classList.add("letter");
           letterSpan.style.transition = "color 0.3s";
-          letterSpan.style.transitionDelay = `${i * 0.1}s`;
+          letterSpan.style.transitionDelay = `${i * 0.05}s`;
           span.appendChild(letterSpan);
         });
         setTimeout(() => {

@@ -7,9 +7,11 @@
     gap: 16px;
 
     @include breakpoint(laptop) {
+        padding: 0 40px;
     }
 
     @include breakpoint(desktop) {
+        padding: 0 72px;
         gap: 24px;
     }
     

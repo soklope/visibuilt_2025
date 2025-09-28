@@ -24,8 +24,6 @@
     letter-spacing: $letter-spacing;
     padding: 8px 24px;
 
-
-
     &::before {
       content: "";
       height: 24px;
@@ -37,10 +35,10 @@
 }
 
 .wp-block-button {
-    @include button-with-icon('../icons/flower/olive/2.png');
     border: solid 1px $yellow;
     border-radius: 50px;
     display: flex;
+    @include button-with-icon('../icons/flower/olive/2.png');
 
     &__link {
         color: $yellow;
