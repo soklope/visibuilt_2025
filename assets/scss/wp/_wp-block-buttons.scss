@@ -54,3 +54,14 @@
     }
   }
 }
+
+.wp-block-buttons  {
+
+  @include breakpoint(tablet) {
+    gap: 24px;
+  }
+
+  @include breakpoint(laptop) {
+    gap: 40px;
+  }
+}

@@ -685,7 +685,7 @@ a {
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   color: #FFFFFF;
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   font-weight: bold;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -786,6 +786,17 @@ a {
 }
 .is-style-outline .wp-block-button__link {
   color: #2D342A;
+}
+
+@media (min-width: 768px) {
+  .wp-block-buttons {
+    gap: 24px;
+  }
+}
+@media (min-width: 1240px) {
+  .wp-block-buttons {
+    gap: 40px;
+  }
 }
 
 .wp-block-spacer {
@@ -936,6 +947,25 @@ a {
 @media (min-width: 1537px) {
   .has-large-font-size {
     font-size: 2.25rem !important;
+  }
+}
+
+.has-x-large-font-size {
+  font-size: 1.5rem !important;
+}
+@media (min-width: 768px) {
+  .has-x-large-font-size {
+    font-size: 3rem !important;
+  }
+}
+@media (min-width: 1240px) {
+  .has-x-large-font-size {
+    font-size: 3.75rem !important;
+  }
+}
+@media (min-width: 1537px) {
+  .has-x-large-font-size {
+    font-size: 4.5rem !important;
   }
 }
 

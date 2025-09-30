@@ -33,3 +33,19 @@
         font-size: $font-size-4xl !important;
     }
 }
+
+.has-x-large-font-size {
+    font-size: $font-size-2xl !important;
+    
+    @include breakpoint(tablet) {
+        font-size: $font-size-5xl !important;
+    }
+    
+    @include breakpoint(laptop) {
+        font-size: $font-size-6xl !important;
+    }
+
+    @include breakpoint(desktop) {
+        font-size: $font-size-7xl !important;
+    }
+}

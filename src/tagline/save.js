@@ -5,7 +5,7 @@ export default function Save( {attributes} ) {
     const { taglineText, imageUrl, imageId, align, layout } = attributes;
 
     return (
-        <div { ...useBlockProps.save({ className:  `skp-tagline skp-tagline--${align} skp-tagline--${layout}` }) }>
+        <div { ...useBlockProps.save({ className:  `skp-tagline skp-tagline--${align} skp-tagline--${layout} page-container` }) }>
             { imageUrl && (
                 <img className="skp-tagline__image" src={imageUrl} alt={__('Tagline image', 'skp-theme')} />
             )}

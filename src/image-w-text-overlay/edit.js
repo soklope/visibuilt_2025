@@ -47,7 +47,7 @@ export default function Edit({ attributes, setAttributes }) {
                 }) }
             >
                 <InnerBlocks 
-                    allowedBlocks={ [ 'core/paragraph', 'core/buttons', 'skp-blocks/tagline'] } 
+                    allowedBlocks={ [ 'core/paragraph', 'core/buttons', 'skp-blocks/tagline', 'skp-blocks/value-info'] } 
                     template={[
                         [ 'skp-blocks/tagline' ],
                         [ 'core/paragraph', { placeholder: 'Add project description…' } ],
